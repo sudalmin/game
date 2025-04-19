@@ -223,7 +223,7 @@ section {
 }
 
 section.head {
-  background-image: url(/img/bg_head.png);
+  background-image: url(../img/bg_head.png);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -298,7 +298,7 @@ section.head div.main_img img.txt {
 
 div.section_wrap {
   position: relative;
-  background-image: url(/img/bg_main.png);
+  background-image: url(../img/bg_main.png);
   background-size: cover;
 }
 
@@ -410,7 +410,7 @@ section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover {
   transition: 500ms;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
-  content: url(/img/dailygift_item_on.png);
+  content: url(../img/dailygift_item_on.png);
 }
 section.dailygift_wrap div.dailygift div.bg {
   position: absolute;
@@ -608,7 +608,7 @@ section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g::af
   position: absolute;
   right: -31px;
   top: -3px;
-  content: url(/img/ic_pro_g.png);
+  content: url(../img/ic_pro_g.png);
 }
 section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
   position: absolute;
@@ -624,7 +624,7 @@ section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m::be
   position: absolute;
   left: -26px;
   top: -3px;
-  content: url(/img/ic_pro_m.png);
+  content: url(../img/ic_pro_m.png);
 }
 section.product_wrap div.product_list div.pro div.wrap div.price {
   display: -webkit-box;
@@ -743,7 +743,7 @@ section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_
   position: absolute;
   right: -27px;
   top: -3px;
-  content: url(/img/ic_pro_g.png);
+  content: url(../img/ic_pro_g.png);
 }
 section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
   position: absolute;
@@ -760,7 +760,7 @@ section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_
   position: absolute;
   left: -28px;
   top: -3px;
-  content: url(/img/ic_pro_m.png);
+  content: url(../img/ic_pro_m.png);
 }
 section.product_wrap div.product_list_gold div.pro div.wrap div.price {
   position: relative;
@@ -950,7 +950,7 @@ section.foot div.container div.d_flex div.right div.img_item div {
   justify-items: end;
 }
 section.foot div.container div.d_flex div.right div.img_item div::before {
-  content: url(/img/item_arrow.png);
+  content: url(../img/item_arrow.png);
   display: block;
   text-align: center;
 }
@@ -979,7 +979,7 @@ section.foot div.container h2 {
 }
 section.foot div.container h2::before {
   display: inline-block;
-  content: url(/img/ic_info.png);
+  content: url(../img/ic_info.png);
   margin-right: 10px;
 }
 section.foot div.container ul {
@@ -1114,10 +1114,10 @@ section.pop01 div.wrap a.close {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(/img/ic_close_off.png) no-repeat center;
+  background: url(../img/ic_close_off.png) no-repeat center;
 }
 section.pop01 div.wrap a.close:hover {
-  background: url(/img/ic_close_on.png) no-repeat center;
+  background: url(../img/ic_close_on.png) no-repeat center;
 }
 
 section.pop02 {
@@ -1142,7 +1142,7 @@ section.pop02 div.wrap {
   position: relative;
   width: 840px;
   height: 360px;
-  background: url(/img/pop_bg_problem.png) no-repeat center;
+  background: url(../img/pop_bg_problem.png) no-repeat center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1217,10 +1217,10 @@ section.pop02 div.wrap a.close {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(/img/ic_close_off.png) no-repeat center;
+  background: url(../img/ic_close_off.png) no-repeat center;
 }
 section.pop02 div.wrap a.close:hover {
-  background: url(/img/ic_close_on.png) no-repeat center;
+  background: url(../img/ic_close_on.png) no-repeat center;
 }
 
 section.pop03 {
@@ -1246,7 +1246,7 @@ section.pop03 div.wrap {
   width: 1000px;
   height: 620px;
   text-align: center;
-  background: url(/img/pop_bg_login.png) no-repeat center;
+  background: url(../img/pop_bg_login.png) no-repeat center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1285,7 +1285,7 @@ section.pop03 div.wrap div.pop_content div.box_item div.box2 {
   margin-left: 40px;
 }
 section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g {
-  background: url(/img/pop_bg_combo_gold.png) no-repeat;
+  background: url(../img/pop_bg_combo_gold.png) no-repeat;
   padding-top: 15px;
   width: 300px;
   height: 148px;
@@ -1312,7 +1312,7 @@ section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.txt s
 }
 section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_m {
   margin-top: 13px;
-  background: url(/img/pop_bg_combo_box.png) no-repeat;
+  background: url(../img/pop_bg_combo_box.png) no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1380,10 +1380,10 @@ section.pop03 div.wrap a.close {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(/img/ic_close_off.png) no-repeat center;
+  background: url(../img/ic_close_off.png) no-repeat center;
 }
 section.pop03 div.wrap a.close:hover {
-  background: url(/img/ic_close_on.png) no-repeat center;
+  background: url(../img/ic_close_on.png) no-repeat center;
 }
 
 /*태블릿 가로, 세로*/
@@ -1392,7 +1392,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
   }
   section.head {
-    background-image: url(/img/bg_head.png);
+    background-image: url(../img/bg_head.png);
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -1468,7 +1468,7 @@ section.pop03 div.wrap a.close:hover {
   }
   div.section_wrap {
     position: relative;
-    background-image: url(/img/bg_main.png);
+    background-image: url(../img/bg_main.png);
     background-size: cover;
   }
   section.dailygift_wrap div.dailygift {
@@ -1590,7 +1590,7 @@ section.pop03 div.wrap a.close:hover {
     transition: 500ms;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
-    content: url(/img/dailygift_item_on.png);
+    content: url(../img/dailygift_item_on.png);
   }
   section.dailygift_wrap div.dailygift div.bg {
     position: absolute;
@@ -1791,7 +1791,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     right: -31px;
     top: -3px;
-    content: url(/img/ic_pro_g.png);
+    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -1807,7 +1807,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     left: -26px;
     top: -3px;
-    content: url(/img/ic_pro_m.png);
+    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.price {
     display: -webkit-box;
@@ -1927,7 +1927,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     right: -27px;
     top: -3px;
-    content: url(/img/ic_pro_g.png);
+    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -1944,7 +1944,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     left: -28px;
     top: -3px;
-    content: url(/img/ic_pro_m.png);
+    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.price {
     position: relative;
@@ -2146,7 +2146,7 @@ section.pop03 div.wrap a.close:hover {
     justify-items: end;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
-    content: url(/img/item_arrow.png);
+    content: url(../img/item_arrow.png);
     display: block;
     text-align: center;
   }
@@ -2176,7 +2176,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.foot div.container h2::before {
     display: inline-block;
-    content: url(/img/ic_info.png);
+    content: url(../img/ic_info.png);
     margin-right: 10px;
   }
   section.foot div.container ul {
@@ -2317,10 +2317,10 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop01 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
   section.pop02 {
     position: absolute;
@@ -2345,7 +2345,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     height: auto;
     margin: 30px;
-    background: url(/img/pop_bg_problem.png) no-repeat center;
+    background: url(../img/pop_bg_problem.png) no-repeat center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2422,10 +2422,10 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop02 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
   section.pop03 {
     position: absolute;
@@ -2450,7 +2450,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url(/img/pop_bg_login.png) no-repeat center;
+    background: url(../img/pop_bg_login.png) no-repeat center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2502,7 +2502,7 @@ section.pop03 div.wrap a.close:hover {
     height: 100%;
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g {
-    background: url(/img/pop_bg_combo_gold.png) no-repeat;
+    background: url(../img/pop_bg_combo_gold.png) no-repeat;
     background-size: cover;
     padding-top: 15px;
     width: 100%;
@@ -2607,10 +2607,10 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop03 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
 }
 /*모바일 가로, 세로*/
@@ -2619,7 +2619,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
   }
   section.head {
-    background-image: url(/img/bg_head.png);
+    background-image: url(../img/bg_head.png);
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -2697,7 +2697,7 @@ section.pop03 div.wrap a.close:hover {
   }
   div.section_wrap {
     position: relative;
-    background-image: url(/img/bg_main.png);
+    background-image: url(../img/bg_main.png);
     background-size: cover;
   }
   section.dailygift_wrap div.dailygift {
@@ -2822,7 +2822,7 @@ section.pop03 div.wrap a.close:hover {
     transition: 500ms;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
-    content: url(/img/dailygift_item_on.png);
+    content: url(../img/dailygift_item_on.png);
   }
   section.dailygift_wrap div.dailygift div.bg {
     position: absolute;
@@ -3025,7 +3025,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     right: -31px;
     top: -3px;
-    content: url(/img/ic_pro_g.png);
+    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -3041,7 +3041,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     left: -26px;
     top: -3px;
-    content: url(/img/ic_pro_m.png);
+    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.price {
     display: -webkit-box;
@@ -3161,7 +3161,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     right: -27px;
     top: -3px;
-    content: url(/img/ic_pro_g.png);
+    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -3178,7 +3178,7 @@ section.pop03 div.wrap a.close:hover {
     position: absolute;
     left: -28px;
     top: -3px;
-    content: url(/img/ic_pro_m.png);
+    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.price {
     position: relative;
@@ -3385,7 +3385,7 @@ section.pop03 div.wrap a.close:hover {
     margin-top: 10px;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
-    content: url(/img/item_arrow.png);
+    content: url(../img/item_arrow.png);
     display: none;
     text-align: center;
   }
@@ -3418,7 +3418,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.foot div.container h2::before {
     display: inline-block;
-    content: url(/img/ic_info.png);
+    content: url(../img/ic_info.png);
     margin-right: 10px;
   }
   section.foot div.container ul {
@@ -3563,10 +3563,10 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop01 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
   section.pop02 {
     position: absolute;
@@ -3591,7 +3591,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     height: auto;
     margin: 30px;
-    background: url(/img/pop_bg_problem.png) no-repeat center;
+    background: url(../img/pop_bg_problem.png) no-repeat center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3669,10 +3669,10 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop02 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
   section.pop03 {
     position: absolute;
@@ -3697,7 +3697,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url(/img/pop_bg_login.png) no-repeat center;
+    background: url(../img/pop_bg_login.png) no-repeat center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3748,7 +3748,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g {
     margin-top: 5px;
-    background: url(/img/pop_bg_combo_gold.png) no-repeat;
+    background: url(../img/pop_bg_combo_gold.png) no-repeat;
     background-size: cover;
     padding-top: 5px;
     width: 100%;
@@ -3867,9 +3867,9 @@ section.pop03 div.wrap a.close:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(/img/ic_close_off.png) no-repeat center;
+    background: url(../img/ic_close_off.png) no-repeat center;
   }
   section.pop03 div.wrap a.close:hover {
-    background: url(/img/ic_close_on.png) no-repeat center;
+    background: url(../img/ic_close_on.png) no-repeat center;
   }
 }

@@ -2,15 +2,15 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face {
   font-family: "MillionDesign"; /*글꼴*/
-  src: url("/font/MillionDesign.woff") format("woff"), url("/font/MillionDesign.woff2") format("woff2"), url("/font/MillionDesign.ttf") format("truetype");
+  src: url("../font/MillionDesign.woff") format("woff"), url("../font/MillionDesign.woff2") format("woff2"), url("../font/MillionDesign.ttf") format("truetype");
 }
 @font-face {
   font-family: "geombangOTB"; /*글꼴*/
-  src: url("/font/433geombangOTB.woff") format("woff"), url("/font/433geombangOTB.woff2") format("woff2"), url("/font/433geombangOTB.ttf") format("truetype");
+  src: url("../font/433geombangOTB.woff") format("woff"), url("../font/433geombangOTB.woff2") format("woff2"), url("../font/433geombangOTB.ttf") format("truetype");
 }
 @font-face {
   font-family: "geombangOTR"; /*글꼴*/
-  src: url("/font/433geombangOTR.woff") format("woff"), url("/font/433geombangOTR.woff2") format("woff2"), url("/font/433geombangOTR.ttf") format("truetype");
+  src: url("../font/433geombangOTR.woff") format("woff"), url("../font/433geombangOTR.woff2") format("woff2"), url("../font/433geombangOTR.ttf") format("truetype");
 }
 * {
   font-family: "geombangOTB", "Nanum Gothic", "MillionDesign", serif;

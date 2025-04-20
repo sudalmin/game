@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+
+  <body>
+    <!-- pop01-->
+    <section class="pop01" style="display: none">
+      <div class="wrap">
+        <a class="close" href="#"></a>
+        <div class="pop_content">
+          <h2><img src="img/pop_txt_login.png" /></h2>
+          <div class="form">
+            <input type="text" placeholder="Account Number" /><a href="#"
+              ><span>Login</span></a
+            >
+          </div>
+          <p>
+            Found in [Settings]<span><img src="img/pop_arrow.png" /></span
+            >[Support] Tab.
+          </p>
+          <div class="img"><img src="img/pop_boximg.png" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pop02-->
+    <section class="pop02" style="display: none">
+      <div class="wrap">
+        <a class="close" href="#"></a>
+        <div class="pop_content">
+          <div>
+            <div class="img"><img src="img/pop_img_problem.png" /></div>
+            <div>
+              <p>
+                문제가 발생하였습니다.<br />
+                새로 고침 후 다시 확인해 주세요.<br />
+                문제가 계속될 경우,<br />
+                고객 지원 페이지로 문의 바랍니다.<br />
+                nwww.thumbage.co.kr
+              </p>
+              <a href="#">OK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pop03-->
+    <section class="pop03" style="display: none">
+      <div class="wrap">
+        <a class="close" href="#"></a>
+        <div class="pop_content">
+          <div class="img_t"><img src="img/pop_txt_combo.png" /></div>
+          <div class="box_item">
+            <div class="box_txt">
+              골드 X 10,000<br />
+              코인 X 5,000<br />
+              유니폼백 X 5<br />
+              프리미엄 글러브 강화 상자 X 3<br />
+              프리미엄 방어구 강화 상자 X 3<br />
+              프리미엄 글러브 강화 상자 X 3<br />
+              프리미엄 방어구 강화 상자 X 3<br />
+            </div>
+            <div class="box2">
+              <div class="box_g">
+                <div class="img"><img src="img/pop_img_gold.png" /></div>
+                <div class="txt">
+                  <span>Bonus Gold</span><span class="num">60ⓖ</span>
+                </div>
+              </div>
+              <div class="box_m">
+                <span>Earned<br />Mileage</span><span class="num">19ⓜ</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrap"><a href="#">1.99$ Purchase</a></div>
+
+          <p>
+            확률 정보 안내 <a href="#">확률 상세보기 <span>▶</span></a
+            ><br />
+            구매 후 상품을 사용하지 않은 경우 7일 이내 청약철회가 가능하며, 법정
+            대리인 동의를 받지 않은 미성년자의 거래는 취소할 수 있습니다.
+            <a href="#">청약철회 규정보기 <span>▶</span></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- pop04-->
+    <section class="pop03" style="display: none">
+      <div class="wrap">
+        <a class="close" href="#"></a>
+        <div class="pop_content">
+          <div class="img_t"><img src="img/pop_txt_package2.png" /></div>
+          <div class="box_item package">
+            <div class="box_txt">
+              골드 X 10,000<br />
+              코인 X 5,000<br />
+              유니폼백 X 5<br />
+              프리미엄 글러브 강화 상자 X 3<br />
+              프리미엄 방어구 강화 상자 X 3<br />
+            </div>
+            <div class="box2">
+              <div class="box_g">
+                <div class="img"><img src="img/pop_img_gold.png" /></div>
+                <div class="txt">
+                  <span>Bonus Gold</span><span class="num">60 ⓖ</span>
+                </div>
+              </div>
+              <div class="box_m">
+                <span>Earned<br />Mileage</span><span class="num">19 ⓜ</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrap"><a href="#">1.99$ Purchase</a></div>
+
+          <p>
+            확률 정보 안내 <a href="#">확률 상세보기 ▶</a><br />
+            구매 후 상품을 사용하지 않은 경우 7일 이내 청약철회가 가능하며, 법정
+            대리인 동의를 받지 않은 미성년자의 거래는 취소할 수 있습니다.
+            <a href="#">청약철회 규정보기 ▶</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 로그인 상태 -->
+    <section class="head">
+      <div class="top_wrap">
+        <div class="top">
+          <div class="logo"><img src="img/logo.png" /></div>
+          <div class="admin">
+            <a href="#">Login</a>
+            <div class="language-select-wrapper">
+              <select class="language-select" name="language">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_img">
+        <img src="img/img_main.png" />
+        <img class="txt" src="img/img_main_txt.png" />
+      </div>
+    </section>
+
+    <div class="section_wrap">
+      <!--Daily Gift -->
+      <section class="dailygift_wrap">
+        <div class="dailygift">
+          <div class="c_wrap">
+            <div class="left">
+              <h1><img src="img/txt_dailygift.png" /></h1>
+              <div class="box_info">
+                <div class="respon">
+                  <div class="title">
+                    <h2>계정정보</h2>
+                    <a href="#">Change</a>
+                  </div>
+                  <div class="profile"><img src="img/img_profile.png" /></div>
+                </div>
+                <div class="input_wrap">
+                  <div>
+                    <span class="label">NickName</span>
+                    <input type="text" placeholder="닉네임을 입력하세요" />
+                  </div>
+                  <div>
+                    <span class="label">Account Number</span>
+                    <input type="text" placeholder="접속번호를 입력하세요" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <a href="#"><img src="img/dailygift_item_off.png" /></a>
+            </div>
+          </div>
+          <div class="bg"></div>
+        </div>
+      </section>
+      <!-- 상품  -->
+      <section class="product_wrap">
+        <div class="container">
+          <ul class="tap_menu">
+            <li>
+              <a href="#">BEST SELLER</a>
+            </li>
+            <li>
+              <a href="#">SPECIAL DEALS</a>
+            </li>
+            <li>
+              <a href="#">TIME PERIOD OFFER</a>
+            </li>
+            <li>
+              <a href="#" class="act">GOLD PRODUCTS</a>
+            </li>
+          </ul>
+          <!--  목록타입2 -->
+          <div class="product_list_gold">
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">60골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item1.png" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">330골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item2.png" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">850골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item1.png" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">1800골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item3.png" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">4500골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item4.png" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="wrap">
+                <h3 class="gold">1000골드</h3>
+                <div class="point_mg">
+                  <span class="p_g">+270</span>
+                  <span class="p_m">+89</span>
+                </div>
+                <div class="price">
+                  <span>0.99$</span>
+                </div>
+                <p class="limit">Purchase Limit <span>N</span></p>
+              </div>
+              <div class="item_gold">
+                <img src="img/pro_gold_item5.png" />
+              </div>
+            </div>
+          </div>
+          <div class="pagination_wrap">
+            <ul class="pagination">
+              <li class="prev"><a href="#"><</a></li>
+              <li><a href="#" class="act">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li class="next"><a href="#">></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="foot">
+        <div class="container">
+          <!-- this month's -->
+          <div class="d_flex">
+            <div class="left">
+              <h1>
+                <img src="img/txt_section3_h1.png" />
+                <!-- THIS MONTH'S<br /><span
+                  >ⓜILEAGE</span
+                > -->
+              </h1>
+              <div class="score_m">
+                <span>8000600</span><img src="img/ic_m.png" />
+              </div>
+              <p>Remaining Renewal<br /><span>Time 15D 33H 33M</span></p>
+            </div>
+            <div class="right">
+              <div class="progressbar">
+                <ol>
+                  <li class="on">1000<span>ⓜ</span></li>
+                  <li>2000<span>ⓜ</span></li>
+                  <li>3000<span>ⓜ</span></li>
+                </ol>
+                <div><span></span></div>
+              </div>
+              <div class="img_item">
+                <div class="show">
+                  <img src="img/item_2000g_on.png" />
+                  <span>CLAIM</span>
+                </div>
+                <div>
+                  <img src="img/item_3000g.png" /><span class="ed"
+                    >CLAIMED</span
+                  >
+                </div>
+                <div>
+                  <img src="img/item_5000g.png" /><span class="ed"
+                    >CLAIMED</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 유의사항 -->
+          <h2>유의사항</h2>
+          <ul>
+            <li>
+              웹상점에서 게임 계정 번호로 로그인한 이후 상품을 구매할 수
+              있습니다.
+            </li>
+            <li>
+              일일 선물은 매일 0시(UTC +0) 기준으로 다시 받으실 수 있습니다.
+            </li>
+            <li>
+              로그인하신 계정에 따라 노출 상품 및 상품의 구매 조건, 구매
+              가능여부가 변경될 수 있습니다.
+            </li>
+            <li>
+              상품 가격은 기본 달러로 표시되고 이후 구매하시는 국가의 통화로
+              환산되어 결제됩니다.
+            </li>
+            <li>
+              구매하시려는 구매 수단에 따라 구매가 제한될 수 있으니 구매 수단을
+              잘 확인해 주세요!
+            </li>
+            <li>
+              웹상점에서 상품 구매 시, 로그인 하신 계정의 [우편함]으로 아이템이
+              지급됩니다.
+            </li>
+            <li>
+              상품 결제 전 구매하실 상품과 로그인 된 계정을 정확히 확인해
+              주세요!
+            </li>
+            <li>
+              웹상점 마일리지는 매월 1일 0시 (UTC +0) 기준으로 초기화 됩니다.
+            </li>
+            <li>
+              마일리지 초기화 전까지 달성한 점수까지의 보상 아이템을 직접 수령해
+              주세요!
+            </li>
+            <li>
+              일일 선물과 웹상점 마일리지는 보상 내용, 적립률, 적립한도, 사용 및
+              갱신 기준 등이 변경될 수 있습니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

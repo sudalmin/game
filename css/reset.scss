@@ -360,10 +360,46 @@ section.dailygift_wrap {
         a {
           display: block;
           margin: 50px 50px 50px 20px;
+          position: relative;
+          span.tooltip {
+            display: none;
+          }
           &:hover {
             transition: 500ms;
+            position: relative;
             img {
               content: url(../img/dailygift_item_on.png);
+            }
+            span.tooltip {
+              display: block;
+              position: absolute;
+              top: -150px;
+              left: -50px;
+              z-index: 2;
+              color: #eeeeee;
+              font-family: "geombangOTR", sans-serif;
+              font-size: 12px;
+              line-height: 1.3;
+              letter-spacing: -0.02rem;
+              font-style: italic;
+              background-color: #3b3b53;
+              background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+              width: 300px;
+              padding: 20px;
+              text-align: left;
+              border-width: 1px;
+              border-style: solid;
+              border-color: #686666 #1f1e1e #000000 #585757;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #3b3b53 transparent transparent transparent;
+              }
             }
           }
         }
@@ -1419,10 +1455,45 @@ section.pop03 {
             display: block;
             margin: 20px;
             text-align: center;
+            span.tooltip {
+              display: none;
+            }
             &:hover {
               transition: 500ms;
+              position: relative;
               img {
                 content: url(../img/dailygift_item_on.png);
+              }
+              span.tooltip {
+                display: block;
+                position: absolute;
+                top: -150px;
+                left: 40%;
+                z-index: 2;
+                color: #eeeeee;
+                font-family: "geombangOTR", sans-serif;
+                font-size: 12px;
+                line-height: 1.3;
+                letter-spacing: -0.02rem;
+                font-style: italic;
+                background-color: #3b3b53;
+                background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+                width: 300px;
+                padding: 20px;
+                text-align: left;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #686666 #1f1e1e #000000 #585757;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: #3b3b53 transparent transparent transparent;
+                }
               }
             }
           }
@@ -2538,10 +2609,45 @@ section.pop03 {
             display: block;
             margin: 20px;
             text-align: center;
+            span.tooltip {
+              display: none;
+            }
             &:hover {
               transition: 500ms;
+              position: relative;
               img {
                 content: url(../img/dailygift_item_on.png);
+              }
+              span.tooltip {
+                display: block;
+                position: absolute;
+                top: -150px;
+                left: 0px;
+                z-index: 2;
+                color: #eeeeee;
+                font-family: "geombangOTR", sans-serif;
+                font-size: 12px;
+                line-height: 1.3;
+                letter-spacing: -0.02rem;
+                font-style: italic;
+                background-color: #3b3b53;
+                background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+                width: 300px;
+                padding: 20px;
+                text-align: left;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #686666 #1f1e1e #000000 #585757;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: #3b3b53 transparent transparent transparent;
+                }
               }
             }
           }

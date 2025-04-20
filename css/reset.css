@@ -404,13 +404,49 @@ section.dailygift_wrap div.dailygift div.c_wrap div.right {
 section.dailygift_wrap div.dailygift div.c_wrap div.right a {
   display: block;
   margin: 50px 50px 50px 20px;
+  position: relative;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right a span.tooltip {
+  display: none;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover {
   -webkit-transition: 500ms;
   transition: 500ms;
+  position: relative;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
   content: url(../img/dailygift_item_on.png);
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip {
+  display: block;
+  position: absolute;
+  top: -150px;
+  left: -50px;
+  z-index: 2;
+  color: #eeeeee;
+  font-family: "geombangOTR", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: -0.02rem;
+  font-style: italic;
+  background-color: #3b3b53;
+  background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #686666 #1f1e1e #000000 #585757;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #3b3b53 transparent transparent transparent;
 }
 section.dailygift_wrap div.dailygift div.bg {
   position: absolute;
@@ -1585,12 +1621,47 @@ section.pop03 div.wrap a.close:hover {
     margin: 20px;
     text-align: center;
   }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a span.tooltip {
+    display: none;
+  }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover {
     -webkit-transition: 500ms;
     transition: 500ms;
+    position: relative;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
     content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 40%;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
   }
   section.dailygift_wrap div.dailygift div.bg {
     position: absolute;
@@ -2817,12 +2888,47 @@ section.pop03 div.wrap a.close:hover {
     margin: 20px;
     text-align: center;
   }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a span.tooltip {
+    display: none;
+  }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover {
     -webkit-transition: 500ms;
     transition: 500ms;
+    position: relative;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover img {
     content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
   }
   section.dailygift_wrap div.dailygift div.bg {
     position: absolute;

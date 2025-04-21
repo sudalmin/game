@@ -1031,6 +1031,61 @@ section.foot div.container ul li::before {
   content: "•";
   margin-right: 10px;
 }
+section.foot div.container ul.btns {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.foot div.container ul.btns li::before {
+  display: inline-block;
+  content: none;
+  margin-right: 10px;
+}
+section.foot div.container ul.btns li a {
+  display: block;
+  padding: 10px 20px;
+  color: #eeeeee;
+}
+section.foot div.container p.copyright {
+  color: #818181;
+  text-align: center;
+}
+
+div.m_device_pop {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #3f3f3f solid 1px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+div.m_device_pop img {
+  width: 40px;
+  margin-right: 10px;
+}
+div.m_device_pop span {
+  color: #cecece;
+  line-height: 1.2;
+}
 
 section.pop01 {
   position: absolute;
@@ -2264,6 +2319,88 @@ section.pop03 div.wrap a.close:hover {
     display: inline-block;
     content: "•";
     margin-right: 10px;
+  }
+  section.foot div.container ul.btns {
+    margin-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.foot div.container ul.btns li::before {
+    display: inline-block;
+    content: none;
+    margin-right: 10px;
+  }
+  section.foot div.container ul.btns li a {
+    display: block;
+    padding: 10px 20px;
+    color: #eeeeee;
+  }
+  section.foot div.container p.copyright {
+    color: #818181;
+    text-align: center;
+  }
+  div.m_device_pop {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: #3f3f3f solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+  }
+  div.m_device_pop img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  div.m_device_pop span {
+    color: #cecece;
+    line-height: 1.2;
+  }
+  div.m_device_pop {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: #3f3f3f solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+  }
+  div.m_device_pop img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  div.m_device_pop span {
+    color: #cecece;
+    line-height: 1.2;
   }
   section.pop01 {
     position: absolute;
@@ -3541,6 +3678,60 @@ section.pop03 div.wrap a.close:hover {
     display: inline-block;
     content: "•";
     margin-right: 10px;
+  }
+  section.foot div.container ul.btns {
+    margin-top: 120px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.foot div.container ul.btns li::before {
+    display: inline-block;
+    content: none;
+    margin-right: 10px;
+  }
+  section.foot div.container ul.btns li a {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #eeeeee;
+  }
+  section.foot div.container p.copyright {
+    margin-top: 20px;
+    color: #818181;
+    text-align: center;
+  }
+  div.m_device_pop {
+    visibility: inherit;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: #3f3f3f solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+  }
+  div.m_device_pop img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  div.m_device_pop span {
+    color: #cecece;
+    line-height: 1.2;
   }
   section.pop01 {
     position: absolute;

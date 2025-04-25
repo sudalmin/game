@@ -317,6 +317,10 @@ section.dailygift_wrap div.dailygift div.c_wrap {
   display: flex;
   position: relative;
   z-index: 3;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.left {
   width: 100%;
@@ -328,7 +332,6 @@ section.dailygift_wrap div.dailygift div.c_wrap div.left h1 {
   font-weight: bolder;
   color: #ffffff;
   text-align: center;
-  margin-top: 45px;
   text-shadow: 1px 1px 2px #262521;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info {
@@ -640,11 +643,10 @@ section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g {
   margin-right: 10px;
   margin-left: 2px;
 }
-section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g::after {
+section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g img {
   position: absolute;
   right: -31px;
   top: -3px;
-  content: url(../img/ic_pro_g.png);
 }
 section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
   position: absolute;
@@ -656,11 +658,10 @@ section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
   margin-left: auto;
   padding-left: 40px;
 }
-section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m::before {
+section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m img {
   position: absolute;
   left: -26px;
   top: -3px;
-  content: url(../img/ic_pro_m.png);
 }
 section.product_wrap div.product_list div.pro div.wrap div.price {
   display: -webkit-box;
@@ -694,9 +695,6 @@ section.product_wrap div.product_list div.pro div.wrap p.limit {
   text-align: center;
   margin-top: 12px;
   font-size: 12px;
-  -webkit-transform: skew(-10deg);
-  -moz-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
 }
 section.product_wrap div.product_list div.pro div.wrap p.limit:hover {
   -webkit-box-shadow: none;
@@ -775,11 +773,10 @@ section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_
   margin-left: 0px;
   line-height: 1.1;
 }
-section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g::after {
+section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g img {
   position: absolute;
   right: -27px;
   top: -3px;
-  content: url(../img/ic_pro_g.png);
 }
 section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
   position: absolute;
@@ -792,11 +789,10 @@ section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_
   padding-left: 20px;
   line-height: 1.1;
 }
-section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m::before {
+section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m img {
   position: absolute;
   left: -28px;
   top: -3px;
-  content: url(../img/ic_pro_m.png);
 }
 section.product_wrap div.product_list_gold div.pro div.wrap div.price {
   position: relative;
@@ -834,9 +830,6 @@ section.product_wrap div.product_list_gold div.pro div.wrap p.limit {
   text-align: center;
   margin-top: 12px;
   font-size: 12px;
-  -webkit-transform: skew(-10deg);
-  -moz-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
 }
 section.product_wrap div.product_list_gold div.pro div.wrap p.limit:hover {
   -webkit-box-shadow: none;
@@ -983,7 +976,7 @@ section.foot div.container div.d_flex div.right div.img_item div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  justify-items: end;
+  justify-items: center;
 }
 section.foot div.container div.d_flex div.right div.img_item div::before {
   content: url(../img/item_arrow.png);
@@ -1059,32 +1052,7 @@ section.foot div.container p.copyright {
 }
 
 div.m_device_pop {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: #3f3f3f solid 1px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-}
-div.m_device_pop img {
-  width: 40px;
-  margin-right: 10px;
-}
-div.m_device_pop span {
-  color: #cecece;
-  line-height: 1.2;
+  display: none;
 }
 
 section.pop01 {
@@ -1108,7 +1076,7 @@ section.pop01 {
 section.pop01 div.wrap {
   position: relative;
   width: 1000px;
-  height: 620px;
+  height: auto;
   text-align: center;
   background-color: #253257;
   background: -webkit-gradient(linear, left bottom, left top, from(#4e3669), color-stop(#253257), color-stop(#212647), color-stop(#251c3b), to(#4e3669));
@@ -1128,7 +1096,7 @@ section.pop01 div.wrap {
           align-items: center;
 }
 section.pop01 div.wrap div.pop_content {
-  margin-top: 10px;
+  margin: 30px 0;
   width: 756px;
 }
 section.pop01 div.wrap div.pop_content div.form {
@@ -1349,7 +1317,7 @@ section.pop03 div.wrap {
           align-items: center;
 }
 section.pop03 div.wrap div.pop_content {
-  margin-top: 10px;
+  margin-top: 30px;
   width: 756px;
 }
 section.pop03 div.wrap div.pop_content div.box_item.package {
@@ -1368,7 +1336,7 @@ section.pop03 div.wrap div.pop_content div.box_item div.box_txt {
   line-height: 1.5;
   text-align: left;
   width: 440px;
-  height: 236px;
+  height: auto;
   padding: 15px 20px;
 }
 section.pop03 div.wrap div.pop_content div.box_item div.box2 {
@@ -1430,7 +1398,7 @@ section.pop03 div.wrap div.pop_content div.btn_wrap {
 }
 section.pop03 div.wrap div.pop_content div.btn_wrap a {
   display: inline-block;
-  padding: 0 30px;
+  padding: 0 60px;
   height: 66px;
   background-color: #1ea7f7;
   color: #eeeeee;
@@ -1448,7 +1416,7 @@ section.pop03 div.wrap div.pop_content p {
   color: #9b9b9b;
   font-size: 0.7rem;
   line-height: 1.3;
-  margin: 17px 0;
+  margin: 30px 0 0px 0;
   text-align: left;
 }
 section.pop03 div.wrap div.pop_content p a {
@@ -1572,11 +1540,16 @@ section.pop03 div.wrap a.close:hover {
     position: relative;
   }
   section.dailygift_wrap div.dailygift div.c_wrap {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     position: relative;
     z-index: 3;
     margin: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left {
     width: 100%;
@@ -1596,7 +1569,7 @@ section.pop03 div.wrap a.close:hover {
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info {
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1608,7 +1581,7 @@ section.pop03 div.wrap a.close:hover {
     display: block;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #eeeeee;
     font-style: italic;
@@ -1631,7 +1604,7 @@ section.pop03 div.wrap a.close:hover {
     background-color: #073061;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile {
-    padding: 12px 10px 0px 10px;
+    padding: 12px 0px 0px 0px;
     text-align: center;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile img {
@@ -1639,7 +1612,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap {
     margin: 0px;
-    margin-left: auto;
+    margin-left: 10px;
     width: 75%;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div {
@@ -1678,6 +1651,9 @@ section.pop03 div.wrap a.close:hover {
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a span.tooltip {
     display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right a img {
+    width: 100%;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover {
     -webkit-transition: 500ms;
@@ -1913,11 +1889,10 @@ section.pop03 div.wrap a.close:hover {
     margin-right: 10px;
     margin-left: 2px;
   }
-  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g::after {
+  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g img {
     position: absolute;
     right: -31px;
     top: -3px;
-    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -1929,11 +1904,10 @@ section.pop03 div.wrap a.close:hover {
     margin-left: auto;
     padding-left: 40px;
   }
-  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m::before {
+  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m img {
     position: absolute;
     left: -26px;
     top: -3px;
-    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list div.pro div.wrap div.price {
     display: -webkit-box;
@@ -1967,9 +1941,6 @@ section.pop03 div.wrap a.close:hover {
     text-align: center;
     margin-top: 12px;
     font-size: 12px;
-    -webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
   }
   section.product_wrap div.product_list div.pro div.wrap p.limit:hover {
     -webkit-box-shadow: none;
@@ -2049,11 +2020,10 @@ section.pop03 div.wrap a.close:hover {
     margin-left: 0px;
     line-height: 1.1;
   }
-  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g::after {
+  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g img {
     position: absolute;
     right: -27px;
     top: -3px;
-    content: url(../img/ic_pro_g.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
@@ -2066,11 +2036,10 @@ section.pop03 div.wrap a.close:hover {
     padding-left: 20px;
     line-height: 1.1;
   }
-  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m::before {
+  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m img {
     position: absolute;
     left: -28px;
     top: -3px;
-    content: url(../img/ic_pro_m.png);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.price {
     position: relative;
@@ -2108,9 +2077,6 @@ section.pop03 div.wrap a.close:hover {
     text-align: center;
     margin-top: 12px;
     font-size: 12px;
-    -webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap p.limit:hover {
     -webkit-box-shadow: none;
@@ -2269,7 +2235,7 @@ section.pop03 div.wrap a.close:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    justify-items: end;
+    justify-items: center;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
     content: url(../img/item_arrow.png);
@@ -2347,60 +2313,10 @@ section.pop03 div.wrap a.close:hover {
     text-align: center;
   }
   div.m_device_pop {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: #3f3f3f solid 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-  }
-  div.m_device_pop img {
-    width: 40px;
-    margin-right: 10px;
-  }
-  div.m_device_pop span {
-    color: #cecece;
-    line-height: 1.2;
+    display: none;
   }
   div.m_device_pop {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: #3f3f3f solid 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-  }
-  div.m_device_pop img {
-    width: 40px;
-    margin-right: 10px;
-  }
-  div.m_device_pop span {
-    color: #cecece;
-    line-height: 1.2;
+    display: none;
   }
   section.pop01 {
     position: absolute;
@@ -2424,6 +2340,7 @@ section.pop03 div.wrap a.close:hover {
   section.pop01 div.wrap {
     position: relative;
     width: 100%;
+    height: auto;
     text-align: center;
     background-color: #253257;
     background: -webkit-gradient(linear, left bottom, left top, from(#4e3669), color-stop(#253257), color-stop(#212647), color-stop(#251c3b), to(#4e3669));
@@ -2443,7 +2360,7 @@ section.pop03 div.wrap a.close:hover {
             align-items: center;
   }
   section.pop01 div.wrap div.pop_content {
-    margin-top: 0px;
+    margin: 30px;
     width: 100%;
     padding: 30px;
   }
@@ -2700,7 +2617,7 @@ section.pop03 div.wrap a.close:hover {
     line-height: 1.5;
     text-align: left;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 15px 20px;
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 {
@@ -3083,19 +3000,22 @@ section.pop03 div.wrap a.close:hover {
     opacity: 0.5;
   }
   section.product_wrap ul.tap_menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-bottom: #85848c solid 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px 5px;
+    padding: 5px;
+    border-bottom: #85848c none 5px;
     margin-top: 38px;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: inherit;
+    white-space: inherit;
+    text-align: center;
   }
   section.product_wrap ul.tap_menu li {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
-    margin-right: 5px;
+    margin: 0px;
+    margin-bottom: 5px;
     text-align: center;
     display: inline-block;
   }
@@ -3104,10 +3024,11 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap ul.tap_menu li a {
     display: block;
-    height: 74px;
+    height: auto;
     font-family: "geombangOTB", sans-serif;
-    font-size: 17px;
-    padding: 0 20px;
+    font-size: 100%;
+    padding: 10px;
+    line-height: 2;
     font-style: italic;
     word-wrap: break-word;
     color: #ffffff;
@@ -3128,17 +3049,18 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list {
     display: grid;
-    grid-template-columns: auto;
-    gap: 15px 15px;
+    grid-template-columns: auto auto;
+    gap: 15px 5px;
     margin-top: 35px;
-    padding: 20px;
+    padding: 5px;
   }
   section.product_wrap div.product_list div.pro {
     width: 100%;
+    height: auto;
     position: relative;
   }
   section.product_wrap div.product_list div.pro:hover {
-    margin-top: -15px;
+    margin-top: 0px;
     -webkit-transition: 200ms;
     transition: 200ms;
   }
@@ -3149,10 +3071,10 @@ section.pop03 div.wrap a.close:hover {
   section.product_wrap div.product_list div.pro div.wrap h3 {
     font-family: "geombangOTB", sans-serif;
     color: rgb(255, 255, 255);
-    height: 105px;
-    padding-left: 15px;
-    padding-top: 0px;
-    font-size: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 100%;
     line-height: 1.2;
     font-weight: bolder;
     font-style: italic;
@@ -3173,7 +3095,7 @@ section.pop03 div.wrap a.close:hover {
   section.product_wrap div.product_list div.pro div.wrap ul li {
     color: rgb(255, 255, 255);
     background-color: #dd00ff;
-    height: 94px;
+    height: auto;
     position: relative;
     border: rgba(0, 0, 0, 0.5) solid 1px;
     background: linear-gradient(248deg, #333, #333 21%, #5d5d5d 54%, #333 11%);
@@ -3183,29 +3105,29 @@ section.pop03 div.wrap a.close:hover {
     text-align: center;
   }
   section.product_wrap div.product_list div.pro div.wrap ul li span.item_img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 73px;
+    display: block;
+    height: auto;
   }
   section.product_wrap div.product_list div.pro div.wrap ul li span.item_img:hover span.tooltip {
     visibility: visible;
   }
   section.product_wrap div.product_list div.pro div.wrap ul li span.item_img img {
     margin: auto;
+    width: 100%;
   }
   section.product_wrap div.product_list div.pro div.wrap ul li span.item_img span.tooltip {
     font-family: "geombangOTR", sans-serif;
-    font-size: 12px;
+    font-size: 70%;
     font-style: italic;
     visibility: hidden;
     position: absolute;
-    top: -33px;
-    padding: 7px 2px;
+    top: -25px;
+    padding: 5px;
     z-index: 99;
     background-color: #7e8094;
     background-color: linear-gradient(#867c92, #7e8194);
-    width: 100%;
+    width: auto;
+    height: auto;
     text-align: center;
     border-width: 1px;
     border-style: solid;
@@ -3223,10 +3145,10 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list div.pro div.wrap ul li span.num {
     font-family: "geombangOTB", sans-serif;
-    font-size: 13px;
+    font-size: 50%;
     font-style: italic;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 5px 0px;
     text-align: center;
@@ -3248,7 +3170,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span {
     background-color: #262521;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: bold;
     position: relative;
     padding: 5px 0;
@@ -3257,34 +3179,34 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g {
     width: 50%;
-    height: 37px;
+    height: auto;
     color: #f8d603;
     text-align: right;
-    padding-right: 45px;
+    padding-right: 20px;
     margin-right: 10px;
     margin-left: 2px;
   }
-  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g::after {
+  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_g img {
     position: absolute;
-    right: -31px;
-    top: -3px;
-    content: url(../img/ic_pro_g.png);
+    right: -20px;
+    top: 0px;
+    width: 30%;
   }
   section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
     right: 0;
     top: 18px;
     width: 30%;
-    height: 37px;
+    height: auto;
     color: #e300ff;
     margin-left: auto;
-    padding-left: 40px;
+    padding-left: 20px;
   }
-  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m::before {
+  section.product_wrap div.product_list div.pro div.wrap div.point_mg span.p_m img {
     position: absolute;
-    left: -26px;
+    left: -16px;
     top: -3px;
-    content: url(../img/ic_pro_m.png);
+    width: 50%;
   }
   section.product_wrap div.product_list div.pro div.wrap div.price {
     display: -webkit-box;
@@ -3301,13 +3223,13 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list div.pro div.wrap div.price span {
     display: block;
-    width: 200px;
-    height: 43px;
+    width: 70%;
+    height: auto;
     background-color: #e69c19;
     text-align: center;
     color: #eeeeee;
     font-family: "geombangOTB", sans-serif;
-    font-size: 26px;
+    font-size: 100%;
     font-style: italic;
     line-height: 1.7;
     -webkit-box-shadow: 1px 1px 2px #000000;
@@ -3331,7 +3253,7 @@ section.pop03 div.wrap a.close:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 402px;
+    height: 90%;
     z-index: 1;
     background-color: #5947c9;
     background: linear-gradient(to top, #073061 28px, #3bb7f5 60%, #2167ae);
@@ -3339,17 +3261,17 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list_gold {
     display: grid;
-    grid-template-columns: auto;
-    gap: 15px 15px;
+    grid-template-columns: auto auto;
+    gap: 15px 5px;
     margin-top: 35px;
-    padding: 20px;
+    padding: 5px;
   }
   section.product_wrap div.product_list_gold div.pro {
-    width: 336px;
+    width: 100%;
     position: relative;
   }
   section.product_wrap div.product_list_gold div.pro:hover {
-    margin-top: -15px;
+    margin-top: 0px;
     -webkit-transition: 200ms;
     transition: 200ms;
   }
@@ -3363,7 +3285,7 @@ section.pop03 div.wrap a.close:hover {
     text-shadow: 1px 1px 1px #000000;
     text-align: center;
     display: block;
-    font-size: 50px;
+    font-size: 150%;
     line-height: 2;
     position: relative;
     z-index: 3;
@@ -3374,7 +3296,7 @@ section.pop03 div.wrap a.close:hover {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    margin-top: 200px;
+    margin-top: 60%;
     z-index: 3;
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg:hover {
@@ -3383,7 +3305,8 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span {
     background-color: #262521;
-    font-size: 30px;
+    font-size: 100%;
+    height: auto;
     font-weight: bold;
     position: relative;
     padding: 4px 0;
@@ -3392,7 +3315,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g {
     width: 50%;
-    height: 37px;
+    height: auto;
     color: #f8d603;
     text-align: right;
     padding-right: 45px;
@@ -3400,28 +3323,28 @@ section.pop03 div.wrap a.close:hover {
     margin-left: 0px;
     line-height: 1.1;
   }
-  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g::after {
+  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_g img {
     position: absolute;
-    right: -27px;
-    top: -3px;
-    content: url(../img/ic_pro_g.png);
+    right: -15px;
+    top: 0px;
+    width: 30%;
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m {
     position: absolute;
     right: 0;
     top: 18px;
     width: 30%;
-    height: 37px;
+    height: auto;
     color: #e300ff;
     margin-left: auto;
     padding-left: 20px;
     line-height: 1.1;
   }
-  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m::before {
+  section.product_wrap div.product_list_gold div.pro div.wrap div.point_mg span.p_m img {
     position: absolute;
-    left: -28px;
-    top: -3px;
-    content: url(../img/ic_pro_m.png);
+    left: -13px;
+    top: 0px;
+    width: 50%;
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.price {
     position: relative;
@@ -3429,7 +3352,7 @@ section.pop03 div.wrap a.close:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 43px;
+    margin-top: 12%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3440,13 +3363,13 @@ section.pop03 div.wrap a.close:hover {
   }
   section.product_wrap div.product_list_gold div.pro div.wrap div.price span {
     display: block;
-    width: 200px;
-    height: 43px;
-    background-color: #e69c19;
+    width: 70%;
+    height: auto;
+    background-color: #0aa9e7;
     text-align: center;
     color: #eeeeee;
     font-family: "geombangOTB", sans-serif;
-    font-size: 26px;
+    font-size: 100%;
     font-style: italic;
     line-height: 1.7;
     -webkit-box-shadow: 1px 1px 2px #000000;
@@ -3459,9 +3382,6 @@ section.pop03 div.wrap a.close:hover {
     text-align: center;
     margin-top: 12px;
     font-size: 12px;
-    -webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
   }
   section.product_wrap div.product_list_gold div.pro div.wrap p.limit:hover {
     -webkit-box-shadow: none;
@@ -3472,6 +3392,9 @@ section.pop03 div.wrap a.close:hover {
     z-index: 1;
     top: 0;
     left: 0;
+  }
+  section.product_wrap div.product_list_gold div.pro div.item_gold img {
+    width: 100%;
   }
   section.product_wrap div.pagination_wrap {
     display: -webkit-box;
@@ -3533,7 +3456,7 @@ section.pop03 div.wrap a.close:hover {
     color: #de00ff;
   }
   section.foot div.container div.d_flex div.left div.score_m {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3542,7 +3465,7 @@ section.pop03 div.wrap a.close:hover {
         -ms-flex-align: center;
             align-items: center;
     border: rgba(255, 255, 255, 0.5) solid 1px;
-    padding: 7px 7px 7px 27px;
+    padding: 7px 7px 7px 15px;
     background-color: rgba(0, 0, 0, 0.8);
   }
   section.foot div.container div.d_flex div.left div.score_m span {
@@ -3620,22 +3543,22 @@ section.pop03 div.wrap a.close:hover {
     display: flex;
   }
   section.foot div.container div.d_flex div.right div.img_item div {
-    display: none;
+    display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     justify-items: center;
-    margin-top: 10px;
+    margin: 10px 2px 0px 2px;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
     content: url(../img/item_arrow.png);
-    display: none;
+    display: block;
     text-align: center;
   }
   section.foot div.container div.d_flex div.right div.img_item div span {
     margin-top: 10px;
     display: block;
-    width: 140px;
+    width: 100%;
     height: 40px;
     background-color: #15548f;
     color: #ffffff;
@@ -3646,11 +3569,14 @@ section.pop03 div.wrap a.close:hover {
   section.foot div.container div.d_flex div.right div.img_item div span.ed {
     background-color: #595959;
   }
+  section.foot div.container div.d_flex div.right div.img_item div img {
+    width: 100%;
+  }
   section.foot div.container div.d_flex div.right div.img_item div.show {
     display: block;
   }
   section.foot div.container h2 {
-    font-size: 1.3rem;
+    font-size: 100%;
     margin-top: 100px;
     margin-bottom: 15px;
     padding-left: 20px;
@@ -3671,17 +3597,19 @@ section.pop03 div.wrap a.close:hover {
   section.foot div.container ul li {
     color: rgba(255, 255, 255, 0.5);
     padding: 7px 0;
-    font-size: 1rem;
+    font-size: 80%;
     line-height: 1.3;
   }
   section.foot div.container ul li::before {
     display: inline-block;
     content: "•";
-    margin-right: 10px;
+    margin-right: 5px;
   }
   section.foot div.container ul.btns {
     margin-top: 120px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3697,41 +3625,46 @@ section.pop03 div.wrap a.close:hover {
   section.foot div.container ul.btns li a {
     display: block;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #eeeeee;
+    font-size: 110%;
+    white-space: nowrap;
   }
   section.foot div.container p.copyright {
     margin-top: 20px;
     color: #818181;
     text-align: center;
+    font-size: 80%;
   }
   div.m_device_pop {
-    visibility: inherit;
-    position: fixed;
+    display: block;
+    position: absolute;
     top: 0;
+    left: 0;
     z-index: 99999;
     width: 100%;
+    height: auto;
+    border: #3f3f3f solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+  }
+  div.m_device_pop div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: #3f3f3f solid 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
   }
-  div.m_device_pop img {
-    width: 40px;
+  div.m_device_pop div img {
     margin-right: 10px;
+    width: 10%;
   }
-  div.m_device_pop span {
+  div.m_device_pop div span {
     color: #cecece;
     line-height: 1.2;
+    font-size: 80%;
   }
   section.pop01 {
     position: absolute;
@@ -3755,6 +3688,7 @@ section.pop03 div.wrap a.close:hover {
   section.pop01 div.wrap {
     position: relative;
     width: 100%;
+    height: auto;
     text-align: center;
     background-color: #253257;
     background: -webkit-gradient(linear, left bottom, left top, from(#4e3669), color-stop(#253257), color-stop(#212647), color-stop(#251c3b), to(#4e3669));
@@ -3774,8 +3708,9 @@ section.pop03 div.wrap a.close:hover {
             align-items: center;
   }
   section.pop01 div.wrap div.pop_content {
-    margin-top: 0px;
+    margin: 30px 0;
     width: 100%;
+    height: auto;
     padding: 20px;
   }
   section.pop01 div.wrap div.pop_content h2 img {
@@ -4034,7 +3969,7 @@ section.pop03 div.wrap a.close:hover {
     line-height: 1.5;
     text-align: left;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 15px 20px;
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 {
@@ -4144,11 +4079,12 @@ section.pop03 div.wrap a.close:hover {
     padding-bottom: 20px;
   }
   section.pop03 div.wrap div.pop_content p a {
-    margin: 0 5px;
+    margin: auto;
     background-color: #85848c;
     color: #eeeeee;
     display: inline-block;
-    padding: 2px;
+    padding: 0 2px;
+    height: auto;
   }
   section.pop03 div.wrap div.pop_content p a span {
     font-size: 0.4rem;

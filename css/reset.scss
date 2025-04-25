@@ -278,6 +278,8 @@ section.dailygift_wrap {
       display: flex;
       position: relative;
       z-index: 3;
+      width: 100%;
+      align-items: center;
       div.left {
         width: 100%;
         padding-left: 60px;
@@ -287,7 +289,6 @@ section.dailygift_wrap {
           font-weight: bolder;
           color: #ffffff;
           text-align: center;
-          margin-top: 45px;
           text-shadow: 1px 1px 2px #262521;
         }
         div.box_info {
@@ -588,11 +589,10 @@ section.product_wrap {
             margin-right: 10px;
             margin-left: 2px;
 
-            &::after {
+            img {
               position: absolute;
               right: -31px;
               top: -3px;
-              content: url(../img/ic_pro_g.png);
             }
           }
           span.p_m {
@@ -604,11 +604,10 @@ section.product_wrap {
             color: #e300ff;
             margin-left: auto;
             padding-left: 40px;
-            &::before {
+            img {
               position: absolute;
               left: -26px;
               top: -3px;
-              content: url(../img/ic_pro_m.png);
             }
           }
         }
@@ -638,9 +637,6 @@ section.product_wrap {
           text-align: center;
           margin-top: 12px;
           font-size: 12px;
-          -webkit-transform: skew(-10deg);
-          -moz-transform: skew(-10deg);
-          -o-transform: skew(-10deg);
           &:hover {
             box-shadow: none;
           }
@@ -715,11 +711,10 @@ section.product_wrap {
             margin-left: 0px;
             line-height: 1.1;
 
-            &::after {
+            img {
               position: absolute;
               right: -27px;
               top: -3px;
-              content: url(../img/ic_pro_g.png);
             }
           }
           span.p_m {
@@ -732,11 +727,10 @@ section.product_wrap {
             margin-left: auto;
             padding-left: 20px;
             line-height: 1.1;
-            &::before {
+            img {
               position: absolute;
               left: -28px;
               top: -3px;
-              content: url(../img/ic_pro_m.png);
             }
           }
         }
@@ -770,9 +764,7 @@ section.product_wrap {
           text-align: center;
           margin-top: 12px;
           font-size: 12px;
-          -webkit-transform: skew(-10deg);
-          -moz-transform: skew(-10deg);
-          -o-transform: skew(-10deg);
+
           &:hover {
             box-shadow: none;
           }
@@ -907,7 +899,7 @@ section.foot {
           display: flex;
           div {
             flex: 1 1 auto;
-            justify-items: end;
+            justify-items: center;
             &::before {
               content: url(../img/item_arrow.png);
               display: block;
@@ -984,26 +976,7 @@ section.foot {
 
 // 모바일디바이스 세로 팝업
 div.m_device_pop {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #3f3f3f solid 1px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  img {
-    width: 40px;
-    margin-right: 10px;
-  }
-  span {
-    color: #cecece;
-    line-height: 1.2;
-  }
+  display: none;
 }
 // pop01
 section.pop01 {
@@ -1020,7 +993,7 @@ section.pop01 {
   div.wrap {
     position: relative;
     width: 1000px;
-    height: 620px;
+    height: auto;
     text-align: center;
     background-color: #253257;
     background: linear-gradient(
@@ -1038,7 +1011,7 @@ section.pop01 {
     justify-content: center;
     align-items: center;
     div.pop_content {
-      margin-top: 10px;
+      margin: 30px 0;
       width: 756px;
       div.form {
         margin-top: 25px;
@@ -1203,7 +1176,7 @@ section.pop03 {
     justify-content: center;
     align-items: center;
     div.pop_content {
-      margin-top: 10px;
+      margin-top: 30px;
       width: 756px;
       div.box_item.package {
         margin-top: 20px;
@@ -1218,7 +1191,7 @@ section.pop03 {
           line-height: 1.5;
           text-align: left;
           width: 440px;
-          height: 236px;
+          height: auto;
           padding: 15px 20px;
         }
         div.box2 {
@@ -1276,7 +1249,7 @@ section.pop03 {
         margin-top: 30px;
         a {
           display: inline-block;
-          padding: 0 30px;
+          padding: 0 60px;
           height: 66px;
           background-color: #1ea7f7;
           color: #eeeeee;
@@ -1294,7 +1267,7 @@ section.pop03 {
         color: #9b9b9b;
         font-size: 0.7rem;
         line-height: 1.3;
-        margin: 17px 0;
+        margin: 30px 0 0px 0;
         text-align: left;
         a {
           margin: 0 5px;
@@ -1403,11 +1376,12 @@ section.pop03 {
       margin: 30px;
       position: relative;
       div.c_wrap {
-        display: block;
+        display: flex;
         width: 100%;
         position: relative;
         z-index: 3;
         margin: 30px;
+        align-items: center;
         div.left {
           width: 100%;
           padding: 0px;
@@ -1425,14 +1399,14 @@ section.pop03 {
           div.box_info {
             margin-top: 25px;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px;
+            padding: 20px;
             display: flex;
             div.respon {
               display: block;
               div.title {
                 display: block;
                 h2 {
-                  font-size: 1.8rem;
+                  font-size: 1.5rem;
                   font-weight: bold;
                   color: #eeeeee;
                   font-style: italic;
@@ -1456,7 +1430,7 @@ section.pop03 {
                 }
               }
               div.profile {
-                padding: 12px 10px 0px 10px;
+                padding: 12px 0px 0px 0px;
                 text-align: center;
                 img {
                   width: 100%;
@@ -1465,7 +1439,7 @@ section.pop03 {
             }
             div.input_wrap {
               margin: 0px;
-              margin-left: auto;
+              margin-left: 10px;
               width: 75%;
               div {
                 display: block;
@@ -1503,6 +1477,9 @@ section.pop03 {
             text-align: center;
             span.tooltip {
               display: none;
+            }
+            img {
+              width: 100%;
             }
             &:hover {
               transition: 500ms;
@@ -1733,11 +1710,10 @@ section.pop03 {
               margin-right: 10px;
               margin-left: 2px;
 
-              &::after {
+              img {
                 position: absolute;
                 right: -31px;
                 top: -3px;
-                content: url(../img/ic_pro_g.png);
               }
             }
             span.p_m {
@@ -1749,11 +1725,10 @@ section.pop03 {
               color: #e300ff;
               margin-left: auto;
               padding-left: 40px;
-              &::before {
+              img {
                 position: absolute;
                 left: -26px;
                 top: -3px;
-                content: url(../img/ic_pro_m.png);
               }
             }
           }
@@ -1783,9 +1758,7 @@ section.pop03 {
             text-align: center;
             margin-top: 12px;
             font-size: 12px;
-            -webkit-transform: skew(-10deg);
-            -moz-transform: skew(-10deg);
-            -o-transform: skew(-10deg);
+
             &:hover {
               box-shadow: none;
             }
@@ -1866,11 +1839,10 @@ section.pop03 {
               margin-left: 0px;
               line-height: 1.1;
 
-              &::after {
+              img {
                 position: absolute;
                 right: -27px;
                 top: -3px;
-                content: url(../img/ic_pro_g.png);
               }
             }
             span.p_m {
@@ -1883,11 +1855,10 @@ section.pop03 {
               margin-left: auto;
               padding-left: 20px;
               line-height: 1.1;
-              &::before {
+              img {
                 position: absolute;
                 left: -28px;
                 top: -3px;
-                content: url(../img/ic_pro_m.png);
               }
             }
           }
@@ -1921,9 +1892,6 @@ section.pop03 {
             text-align: center;
             margin-top: 12px;
             font-size: 12px;
-            -webkit-transform: skew(-10deg);
-            -moz-transform: skew(-10deg);
-            -o-transform: skew(-10deg);
             &:hover {
               box-shadow: none;
             }
@@ -2065,7 +2033,7 @@ section.pop03 {
             display: flex;
             div {
               flex: 1 1 auto;
-              justify-items: end;
+              justify-items: center;
               &::before {
                 content: url(../img/item_arrow.png);
                 display: block;
@@ -2145,49 +2113,11 @@ section.pop03 {
 
   // 모바일디바이스 세로 팝업
   div.m_device_pop {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #3f3f3f solid 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    img {
-      width: 40px;
-      margin-right: 10px;
-    }
-    span {
-      color: #cecece;
-      line-height: 1.2;
-    }
+    display: none;
   }
   // 모바일디바이스 세로 팝업
   div.m_device_pop {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #3f3f3f solid 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    img {
-      width: 40px;
-      margin-right: 10px;
-    }
-    span {
-      color: #cecece;
-      line-height: 1.2;
-    }
+    display: none;
   }
   // pop01
   section.pop01 {
@@ -2205,6 +2135,7 @@ section.pop03 {
     div.wrap {
       position: relative;
       width: 100%;
+      height: auto;
       text-align: center;
       background-color: #253257;
       background: linear-gradient(
@@ -2222,7 +2153,7 @@ section.pop03 {
       justify-content: center;
       align-items: center;
       div.pop_content {
-        margin-top: 0px;
+        margin: 30px;
         width: 100%;
         padding: 30px;
         div.form {
@@ -2423,7 +2354,7 @@ section.pop03 {
             line-height: 1.5;
             text-align: left;
             width: 100%;
-            height: 100%;
+            height: auto;
             padding: 15px 20px;
           }
           div.box2 {
@@ -2792,14 +2723,19 @@ section.pop03 {
   }
   section.product_wrap {
     ul.tap_menu {
-      display: flex;
-      border-bottom: #85848c solid 5px;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 2px 5px;
+      padding: 5px;
+      border-bottom: #85848c none 5px;
       margin-top: 38px;
-      overflow-x: auto;
-      white-space: nowrap;
+      overflow-x: inherit;
+      white-space: inherit;
+      text-align: center;
       li {
         flex: auto;
-        margin-right: 5px;
+        margin: 0px;
+        margin-bottom: 5px;
         text-align: center;
         display: inline-block;
 
@@ -2808,10 +2744,11 @@ section.pop03 {
         }
         & a {
           display: block;
-          height: 74px;
+          height: auto;
           font-family: "geombangOTB", sans-serif;
-          font-size: 17px;
-          padding: 0 20px;
+          font-size: 100%;
+          padding: 10px;
+          line-height: 2;
           font-style: italic;
           word-wrap: break-word;
           color: #ffffff;
@@ -2830,16 +2767,17 @@ section.pop03 {
     }
     div.product_list {
       display: grid;
-      grid-template-columns: auto;
-      gap: 15px 15px;
+      grid-template-columns: auto auto;
+      gap: 15px 5px;
       margin-top: 35px;
-      padding: 20px;
+      padding: 5px;
 
       div.pro {
         width: 100%;
+        height: auto;
         position: relative;
         &:hover {
-          margin-top: -15px;
+          margin-top: 0px;
           transition: 200ms;
         }
         div.wrap {
@@ -2848,10 +2786,10 @@ section.pop03 {
           h3 {
             font-family: "geombangOTB", sans-serif;
             color: rgba(255, 255, 255, 1);
-            height: 105px;
-            padding-left: 15px;
-            padding-top: 0px;
-            font-size: 2rem;
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            font-size: 100%;
             line-height: 1.2;
             font-weight: bolder;
             font-style: italic;
@@ -2867,7 +2805,7 @@ section.pop03 {
             li {
               color: rgba(255, 255, 255, 1);
               background-color: #dd00ff;
-              height: 94px;
+              height: auto;
               position: relative;
               border: rgba(0, 0, 0, 0.5) solid 1px;
               background: linear-gradient(
@@ -2882,26 +2820,28 @@ section.pop03 {
                 text-align: center;
               }
               span.item_img {
-                display: flex;
-                height: 73px;
+                display: block;
+                height: auto;
                 &:hover span.tooltip {
                   visibility: visible;
                 }
                 img {
                   margin: auto;
+                  width: 100%;
                 }
                 span.tooltip {
                   font-family: "geombangOTR", sans-serif;
-                  font-size: 12px;
+                  font-size: 70%;
                   font-style: italic;
                   visibility: hidden;
                   position: absolute;
-                  top: -33px;
-                  padding: 7px 2px;
+                  top: -25px;
+                  padding: 5px;
                   z-index: 99;
                   background-color: #7e8094;
                   background-color: linear-gradient(#867c92, #7e8194);
-                  width: 100%;
+                  width: auto;
+                  height: auto;
                   text-align: center;
                   border-width: 1px;
                   border-style: solid;
@@ -2920,10 +2860,10 @@ section.pop03 {
               }
               span.num {
                 font-family: "geombangOTB", sans-serif;
-                font-size: 13px;
+                font-size: 50%;
                 font-style: italic;
                 width: 100%;
-                position: absolute;
+                position: relative;
                 bottom: 0;
                 padding: 5px 0px;
                 text-align: center;
@@ -2943,7 +2883,7 @@ section.pop03 {
             }
             span {
               background-color: #262521;
-              font-size: 30px;
+              font-size: 100%;
               font-weight: bold;
               position: relative;
               padding: 5px 0;
@@ -2952,18 +2892,18 @@ section.pop03 {
             }
             span.p_g {
               width: 50%;
-              height: 37px;
+              height: auto;
               color: #f8d603;
               text-align: right;
-              padding-right: 45px;
+              padding-right: 20px;
               margin-right: 10px;
               margin-left: 2px;
 
-              &::after {
+              img {
                 position: absolute;
-                right: -31px;
-                top: -3px;
-                content: url(../img/ic_pro_g.png);
+                right: -20px;
+                top: 0px;
+                width: 30%;
               }
             }
             span.p_m {
@@ -2971,15 +2911,15 @@ section.pop03 {
               right: 0;
               top: 18px;
               width: 30%;
-              height: 37px;
+              height: auto;
               color: #e300ff;
               margin-left: auto;
-              padding-left: 40px;
-              &::before {
+              padding-left: 20px;
+              img {
                 position: absolute;
-                left: -26px;
+                left: -16px;
                 top: -3px;
-                content: url(../img/ic_pro_m.png);
+                width: 50%;
               }
             }
           }
@@ -2992,13 +2932,13 @@ section.pop03 {
             }
             span {
               display: block;
-              width: 200px;
-              height: 43px;
+              width: 70%;
+              height: auto;
               background-color: #e69c19;
               text-align: center;
               color: #eeeeee;
               font-family: "geombangOTB", sans-serif;
-              font-size: 26px;
+              font-size: 100%;
               font-style: italic;
               line-height: 1.7;
               box-shadow: 1px 1px 2px #000000;
@@ -3022,7 +2962,7 @@ section.pop03 {
           top: 0;
           left: 0;
           width: 100%;
-          height: 402px;
+          height: 90%;
           z-index: 1;
           background-color: #5947c9;
           background: linear-gradient(
@@ -3039,15 +2979,15 @@ section.pop03 {
     // 골드목록
     div.product_list_gold {
       display: grid;
-      grid-template-columns: auto;
-      gap: 15px 15px;
+      grid-template-columns: auto auto;
+      gap: 15px 5px;
       margin-top: 35px;
-      padding: 20px;
+      padding: 5px;
       div.pro {
-        width: 336px;
+        width: 100%;
         position: relative;
         &:hover {
-          margin-top: -15px;
+          margin-top: 0px;
           transition: 200ms;
         }
         div.wrap {
@@ -3059,7 +2999,7 @@ section.pop03 {
             text-shadow: 1px 1px 1px #000000;
             text-align: center;
             display: block;
-            font-size: 50px;
+            font-size: 150%;
             line-height: 2;
             position: relative;
             z-index: 3;
@@ -3068,14 +3008,15 @@ section.pop03 {
             margin-top: 15px;
             display: flex;
             position: relative;
-            margin-top: 200px;
+            margin-top: 60%;
             z-index: 3;
             &:hover {
               box-shadow: none;
             }
             span {
               background-color: #262521;
-              font-size: 30px;
+              font-size: 100%;
+              height: auto;
               font-weight: bold;
               position: relative;
               padding: 4px 0;
@@ -3084,7 +3025,7 @@ section.pop03 {
             }
             span.p_g {
               width: 50%;
-              height: 37px;
+              height: auto;
               color: #f8d603;
               text-align: right;
               padding-right: 45px;
@@ -3092,11 +3033,11 @@ section.pop03 {
               margin-left: 0px;
               line-height: 1.1;
 
-              &::after {
+              img {
                 position: absolute;
-                right: -27px;
-                top: -3px;
-                content: url(../img/ic_pro_g.png);
+                right: -15px;
+                top: 0px;
+                width: 30%;
               }
             }
             span.p_m {
@@ -3104,16 +3045,16 @@ section.pop03 {
               right: 0;
               top: 18px;
               width: 30%;
-              height: 37px;
+              height: auto;
               color: #e300ff;
               margin-left: auto;
               padding-left: 20px;
               line-height: 1.1;
-              &::before {
+              img {
                 position: absolute;
-                left: -28px;
-                top: -3px;
-                content: url(../img/ic_pro_m.png);
+                left: -13px;
+                top: 0px;
+                width: 50%;
               }
             }
           }
@@ -3121,20 +3062,20 @@ section.pop03 {
             position: relative;
             z-index: 3;
             display: flex;
-            margin-top: 43px;
+            margin-top: 12%;
             justify-content: center;
             &:hover {
               box-shadow: none;
             }
             span {
               display: block;
-              width: 200px;
-              height: 43px;
-              background-color: #e69c19;
+              width: 70%;
+              height: auto;
+              background-color: #0aa9e7;
               text-align: center;
               color: #eeeeee;
               font-family: "geombangOTB", sans-serif;
-              font-size: 26px;
+              font-size: 100%;
               font-style: italic;
               line-height: 1.7;
               box-shadow: 1px 1px 2px #000000;
@@ -3147,9 +3088,6 @@ section.pop03 {
             text-align: center;
             margin-top: 12px;
             font-size: 12px;
-            -webkit-transform: skew(-10deg);
-            -moz-transform: skew(-10deg);
-            -o-transform: skew(-10deg);
             &:hover {
               box-shadow: none;
             }
@@ -3160,6 +3098,9 @@ section.pop03 {
           z-index: 1;
           top: 0;
           left: 0;
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -3217,12 +3158,12 @@ section.pop03 {
             }
           }
           div.score_m {
-            width: 50%;
+            width: 70%;
             margin: 0 auto;
             display: flex;
             align-items: center;
             border: rgba($color: #ffffff, $alpha: 0.5) solid 1px;
-            padding: 7px 7px 7px 27px;
+            padding: 7px 7px 7px 15px;
             background-color: rgba(0, 0, 0, 0.8);
             & span {
               color: #de00ff;
@@ -3293,19 +3234,19 @@ section.pop03 {
             margin-top: 10px;
             display: flex;
             div {
-              display: none;
+              display: block;
               flex: 1 1 auto;
               justify-items: center;
-              margin-top: 10px;
+              margin: 10px 2px 0px 2px;
               &::before {
                 content: url(../img/item_arrow.png);
-                display: none;
+                display: block;
                 text-align: center;
               }
               span {
                 margin-top: 10px;
                 display: block;
-                width: 140px;
+                width: 100%;
                 height: 40px;
                 background-color: #15548f;
                 color: #ffffff;
@@ -3316,6 +3257,9 @@ section.pop03 {
               span.ed {
                 background-color: #595959;
               }
+              img {
+                width: 100%;
+              }
             }
             div.show {
               display: block;
@@ -3324,7 +3268,7 @@ section.pop03 {
         }
       }
       h2 {
-        font-size: 1.3rem;
+        font-size: 100%;
         margin-top: 100px;
         margin-bottom: 15px;
         padding-left: 20px;
@@ -3342,18 +3286,18 @@ section.pop03 {
         li {
           color: rgba(255, 255, 255, 0.5);
           padding: 7px 0;
-          font-size: 1rem;
+          font-size: 80%;
           line-height: 1.3;
           &::before {
             display: inline-block;
             content: "•";
-            margin-right: 10px;
+            margin-right: 5px;
           }
         }
       }
       ul.btns {
         margin-top: 120px;
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
 
@@ -3366,8 +3310,10 @@ section.pop03 {
           a {
             display: block;
             text-align: center;
-            padding: 10px 20px;
+            padding: 10px 10px;
             color: #eeeeee;
+            font-size: 110%;
+            white-space: nowrap;
           }
         }
       }
@@ -3375,30 +3321,35 @@ section.pop03 {
         margin-top: 20px;
         color: #818181;
         text-align: center;
+        font-size: 80%;
       }
     }
   }
   // 모바일디바이스 세로 팝업
   div.m_device_pop {
-    visibility: inherit;
-    position: fixed;
+    display: block;
+    position: absolute;
     top: 0;
+    left: 0;
     z-index: 99999;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     border: #3f3f3f solid 1px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    img {
-      width: 40px;
-      margin-right: 10px;
-    }
-    span {
-      color: #cecece;
-      line-height: 1.2;
+    padding: 10px;
+    div {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-right: 10px;
+        width: 10%;
+      }
+      span {
+        color: #cecece;
+        line-height: 1.2;
+        font-size: 80%;
+      }
     }
   }
   // pop01
@@ -3417,6 +3368,7 @@ section.pop03 {
     div.wrap {
       position: relative;
       width: 100%;
+      height: auto;
       text-align: center;
       background-color: #253257;
       background: linear-gradient(
@@ -3434,8 +3386,9 @@ section.pop03 {
       justify-content: center;
       align-items: center;
       div.pop_content {
-        margin-top: 0px;
+        margin: 30px 0;
         width: 100%;
+        height: auto;
         padding: 20px;
         h2 {
           img {
@@ -3648,7 +3601,7 @@ section.pop03 {
             line-height: 1.5;
             text-align: left;
             width: 100%;
-            height: 100%;
+            height: auto;
             padding: 15px 20px;
           }
           div.box2 {
@@ -3750,11 +3703,12 @@ section.pop03 {
           padding-bottom: 20px;
 
           a {
-            margin: 0 5px;
+            margin: auto;
             background-color: #85848c;
             color: #eeeeee;
             display: inline-block;
-            padding: 2px;
+            padding: 0 2px;
+            height: auto;
             span {
               font-size: 0.4rem;
               padding: 0px;

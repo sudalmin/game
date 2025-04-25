@@ -1332,7 +1332,7 @@ section.pop03 div.wrap div.pop_content div.box_item {
 section.pop03 div.wrap div.pop_content div.box_item div.box_txt {
   background-color: #eeeeee;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 110%;
   line-height: 1.5;
   text-align: left;
   width: 440px;
@@ -3001,35 +3001,29 @@ section.pop03 div.wrap a.close:hover {
     opacity: 0.5;
   }
   section.product_wrap ul.tap_menu {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2px 5px;
+    display: inline-block;
+    width: auto;
     padding: 5px;
     border-bottom: #85848c none 5px;
     margin-top: 38px;
-    overflow-x: inherit;
-    white-space: inherit;
-    text-align: center;
   }
   section.product_wrap ul.tap_menu li {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-    margin: 0px;
-    margin-bottom: 5px;
-    text-align: center;
     display: inline-block;
+    margin: 0 0 5px 0;
+    text-align: center;
+    width: auto;
   }
   section.product_wrap ul.tap_menu li:nth-child(4) {
-    margin-right: 0px;
+    margin: 0px;
   }
   section.product_wrap ul.tap_menu li a {
     display: block;
+    width: 100%;
     height: auto;
     font-family: "geombangOTB", sans-serif;
     font-size: 100%;
-    padding: 10px;
-    line-height: 2;
+    padding: 15px;
+    line-height: 1;
     font-style: italic;
     word-wrap: break-word;
     color: #ffffff;
@@ -3549,6 +3543,7 @@ section.pop03 div.wrap a.close:hover {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     justify-items: center;
+    text-align: center;
     margin: 10px 2px 0px 2px;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
@@ -3657,10 +3652,13 @@ section.pop03 div.wrap a.close:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div.m_device_pop div img {
     margin-right: 10px;
-    width: 10%;
+    width: 30px;
   }
   div.m_device_pop div span {
     color: #cecece;

@@ -128,9 +128,6 @@ section {
 html,
 body {
   font-size: 16px;
-}
-
-body {
   line-height: 1;
   letter-spacing: -0.06rem;
 }
@@ -341,50 +338,51 @@ section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  width: auto;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title h2 {
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon h2.title {
   font-size: 1.7rem;
   font-weight: bold;
   color: #eeeeee;
   font-style: italic;
-  margin-top: 10px;
   margin-bottom: 13px;
+  word-break: keep-all;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a {
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a {
   font-family: "geombangOTR", sans-serif;
-  font-size: 20px;
+  font-size: 100%;
   color: #eeeeee;
   background-color: #16548f;
   display: block;
-  height: 38px;
+  height: auto;
   line-height: 1.8;
-  width: 100px;
+  width: 100%;
   text-align: center;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a:hover {
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a:hover {
   background-color: #073061;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile {
-  padding: 0 20px;
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.profile {
+  margin: 0 20px;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap {
-  margin-top: -12px;
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap {
+  -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+          flex-grow: 1 !important;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div {
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div {
   display: block;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div:last-child {
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div:last-child {
   margin-top: 10px;
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div span.label {
-  -webkit-transform: skew(-10deg);
-  -moz-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div span.label {
   display: inline-block;
   padding: 5px 15px;
   color: rgba(255, 255, 255, 0.6);
@@ -393,13 +391,63 @@ section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_
   background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#3b393c));
   background: linear-gradient(#737373, #3b393c);
 }
-section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div input[type=text] {
-  width: 90%;
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div input[type=text] {
+  width: 100%;
   font-weight: bold;
   color: #d792fd;
   padding: 5px 15px;
   background-color: #000000;
   border: rgba(255, 255, 255, 0.2) solid 1px;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right {
+  display: none;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a {
+  display: block;
+  margin: 50px 50px 50px 20px;
+  position: relative;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a span.tooltip {
+  display: none;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  position: relative;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover img {
+  content: url(../img/dailygift_item_on.png);
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip {
+  display: block;
+  position: absolute;
+  top: -150px;
+  left: -50px;
+  z-index: 2;
+  color: #eeeeee;
+  font-family: "geombangOTR", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: -0.02rem;
+  font-style: italic;
+  background-color: #3b3b53;
+  background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #686666 #1f1e1e #000000 #585757;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #3b3b53 transparent transparent transparent;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.right {
   margin-left: auto;
@@ -1569,62 +1617,55 @@ section.pop03 div.wrap a.close:hover {
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info {
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 32px 24px 18px 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon {
     display: block;
+    width: auto;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title {
-    display: block;
-  }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title h2 {
-    font-size: 1.5rem;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon h2.title {
+    font-size: 1.7rem;
     font-weight: bold;
     color: #eeeeee;
     font-style: italic;
-    margin: 0;
+    margin-bottom: 13px;
+    word-break: keep-all;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a {
     font-family: "geombangOTR", sans-serif;
-    font-size: 1rem;
-    line-height: 2.5;
+    font-size: 100%;
     color: #eeeeee;
     background-color: #16548f;
     display: block;
-    height: 38px;
+    height: auto;
+    line-height: 1.8;
     width: 100%;
     text-align: center;
-    margin-left: 0px;
-    margin-top: 10px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a:hover {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a:hover {
     background-color: #073061;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile {
-    padding: 12px 0px 0px 0px;
-    text-align: center;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.profile {
+    margin: 0 20px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile img {
-    width: 100%;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap {
-    margin: 0px;
-    margin-left: 10px;
-    width: 75%;
-  }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div {
     display: block;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div:last-child {
-    margin-top: 15px;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div:last-child {
+    margin-top: 10px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div span.label {
-    -webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div span.label {
     display: inline-block;
     padding: 5px 15px;
     color: rgba(255, 255, 255, 0.6);
@@ -1633,13 +1674,63 @@ section.pop03 div.wrap a.close:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#3b393c));
     background: linear-gradient(#737373, #3b393c);
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div input[type=text] {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div input[type=text] {
     width: 100%;
     font-weight: bold;
     color: #d792fd;
-    padding: 15px 15px;
+    padding: 5px 15px;
     background-color: #000000;
     border: rgba(255, 255, 255, 0.2) solid 1px;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right {
+    display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a {
+    display: block;
+    margin: 50px 50px 50px 20px;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a span.tooltip {
+    display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover img {
+    content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: -50px;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right {
     margin: 0;
@@ -2572,6 +2663,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.pop03 div.wrap {
     position: relative;
+    top: 0;
     width: 100%;
     height: auto;
     text-align: center;
@@ -2832,7 +2924,7 @@ section.pop03 div.wrap a.close:hover {
     display: flex;
     width: 100%;
     height: 100%;
-    margin: 30px;
+    margin: 10px;
     position: relative;
   }
   section.dailygift_wrap div.dailygift div.c_wrap {
@@ -2840,7 +2932,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     position: relative;
     z-index: 3;
-    margin: 30px;
+    margin: 10px;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left {
     width: 100%;
@@ -2863,79 +2955,134 @@ section.pop03 div.wrap a.close:hover {
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info {
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 10px;
     display: block;
-    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon {
     display: block;
+    width: auto;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title {
-    display: block;
-  }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title h2 {
-    font-size: 1.8rem;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon h2.title {
+    font-size: 1.7rem;
     font-weight: bold;
     color: #eeeeee;
     font-style: italic;
-    margin: 0;
+    margin-bottom: 13px;
+    word-break: keep-all;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a {
     font-family: "geombangOTR", sans-serif;
-    font-size: 1rem;
-    line-height: 2.5;
+    font-size: 100%;
     color: #eeeeee;
     background-color: #16548f;
     display: block;
-    height: 38px;
+    height: auto;
+    line-height: 1.8;
     width: 100%;
     text-align: center;
-    margin-left: 0px;
-    margin-top: 10px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.title a:hover {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon a:hover {
     background-color: #073061;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile {
-    padding: 12px 10px 0px 10px;
-    text-align: center;
-    margin-bottom: 20px;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.profile {
+    margin: 20px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.respon div.profile img {
-    width: 50%;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap {
-    margin: 0px;
-    margin-left: auto;
-    width: 100%;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap {
+    -webkit-box-flex: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div {
     display: block;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div:last-child {
-    margin-top: 15px;
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div:last-child {
+    margin-top: 10px;
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div span.label {
-    -webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div span.label {
     display: inline-block;
     padding: 5px 15px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 80%;
     background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#3b393c));
     background: linear-gradient(#737373, #3b393c);
   }
-  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_wrap div input[type=text] {
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div input[type=text] {
     width: 100%;
     font-weight: bold;
+    font-size: 80%;
     color: #d792fd;
-    padding: 15px 15px;
+    padding: 5px 15px;
     background-color: #000000;
     border: rgba(255, 255, 255, 0.2) solid 1px;
   }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a img {
+    width: 100px;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a span.tooltip {
+    display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover img {
+    content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -170px;
+    left: inherit;
+    right: 0px;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 60px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
+  }
   section.dailygift_wrap div.dailygift div.c_wrap div.right {
+    display: none;
     margin: 0;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a {
@@ -3000,32 +3147,48 @@ section.pop03 div.wrap a.close:hover {
     border-image-slice: 1;
     opacity: 0.5;
   }
+  section.product_wrap {
+    margin: 10px;
+  }
   section.product_wrap ul.tap_menu {
-    display: inline-block;
-    width: auto;
-    padding: 5px;
-    border-bottom: #85848c none 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: none;
     margin-top: 38px;
   }
   section.product_wrap ul.tap_menu li {
-    display: inline-block;
-    margin: 0 0 5px 0;
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin: 0px;
+    padding-bottom: 5px;
+    padding-right: 5px;
     text-align: center;
     width: auto;
   }
+  section.product_wrap ul.tap_menu li:nth-child(2) {
+    margin: 0px;
+    padding-right: 0;
+  }
   section.product_wrap ul.tap_menu li:nth-child(4) {
     margin: 0px;
+    padding-right: 0;
   }
   section.product_wrap ul.tap_menu li a {
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
     font-family: "geombangOTB", sans-serif;
     font-size: 100%;
-    padding: 15px;
+    padding: 15px 0;
     line-height: 1;
     font-style: italic;
     word-wrap: break-word;
+    word-break: keep-all;
     color: #ffffff;
     -ms-flex-line-pack: center;
         align-content: center;
@@ -3047,7 +3210,7 @@ section.pop03 div.wrap a.close:hover {
     grid-template-columns: auto auto;
     gap: 15px 5px;
     margin-top: 35px;
-    padding: 5px;
+    padding: 0px;
   }
   section.product_wrap div.product_list div.pro {
     width: 100%;
@@ -3910,7 +4073,7 @@ section.pop03 div.wrap a.close:hover {
     top: 0;
     left: 0;
     z-index: 99;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: -webkit-box;
@@ -3925,6 +4088,209 @@ section.pop03 div.wrap a.close:hover {
   }
   section.pop03 div.wrap {
     position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url(../img/pop_bg_login.png) no-repeat center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+  }
+  section.pop03 div.wrap div.pop_content {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+  }
+  section.pop03 div.wrap div.pop_content div.img_t img {
+    width: 80%;
+    margin-top: 30px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item.package {
+    margin-top: 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item {
+    display: block;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-top: 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box_txt {
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 80%;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 {
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g {
+    margin-top: 5px;
+    background: url(../img/pop_bg_combo_gold.png) no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.img {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.img img {
+    width: 90%;
+    margin-left: 30px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.txt {
+    display: block;
+    text-align: right;
+    width: 100%;
+    padding: 0 20px 10px 0;
+    font-family: "geombangOTB", sans-serif;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.txt span {
+    display: block;
+    font-size: 120%;
+    line-height: 130%;
+    padding-left: 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_g div.txt span.num {
+    margin: 0;
+    padding-right: 0px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_m {
+    margin-top: 5px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#5e1d79), to(#241a3e));
+    background: linear-gradient(to top, #5e1d79, #241a3e);
+    border: 1px solid transparent;
+    -o-border-image: linear-gradient(to top, #9632c4 0%, #4a2d77 100%);
+       border-image: -webkit-gradient(linear, left bottom, left top, from(#9632c4), to(#4a2d77));
+       border-image: linear-gradient(to top, #9632c4 0%, #4a2d77 100%);
+    border-image-slice: 1;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_m span {
+    color: #eeeeee;
+    font-family: "geombangOTB", sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.box_item div.box2 div.box_m span.num {
+    font-size: 120%;
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  section.pop03 div.wrap div.pop_content div.btn_wrap {
+    text-align: center;
+    margin-top: 10px;
+  }
+  section.pop03 div.wrap div.pop_content div.btn_wrap a {
+    display: inline-block;
+    width: 100%;
+    padding: 0 30px;
+    height: 100%;
+    background-color: #1ea7f7;
+    color: #eeeeee;
+    font-family: "geombangOTB", sans-serif;
+    line-height: 2.5;
+    font-size: 1rem;
+  }
+  section.pop03 div.wrap div.pop_content div.btn_wrap a:hover {
+    -webkit-box-shadow: 10px 10px 10px #222222;
+            box-shadow: 10px 10px 10px #222222;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+  }
+  section.pop03 div.wrap div.pop_content p {
+    color: #9b9b9b;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    margin: 20px 0 0px 0;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  section.pop03 div.wrap div.pop_content p a {
+    margin: auto;
+    background-color: #85848c;
+    color: #eeeeee;
+    display: inline-block;
+    padding: 0 2px;
+    height: auto;
+  }
+  section.pop03 div.wrap div.pop_content p a span {
+    font-size: 0.4rem;
+    padding: 0px;
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+  section.pop03 div.wrap a.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999999;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/ic_close_off.png) no-repeat center;
+  }
+  section.pop03 div.wrap a.close:hover {
+    background: url(../img/ic_close_on.png) no-repeat center;
+  }
+}
+@media all and (min-width: 376px) and (max-width: 677px) {
+  section.pop03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.pop03 div.wrap {
+    position: relative;
+    top: 100px;
     width: 100%;
     height: auto;
     text-align: center;

@@ -4270,6 +4270,248 @@ section.pop03 div.wrap a.close:hover {
   }
 }
 @media all and (min-width: 376px) and (max-width: 677px) {
+  section.pop01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  section.pop01 div.wrap {
+    position: relative;
+    top: 160px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #253257;
+    background: -webkit-gradient(linear, left bottom, left top, from(#4e3669), color-stop(#253257), color-stop(#212647), color-stop(#251c3b), to(#4e3669));
+    background: linear-gradient(to top, #4e3669, #253257, #212647, #251c3b, #4e3669);
+    border: 1px solid transparent;
+    -o-border-image: linear-gradient(-131deg, #000000, #787878);
+       border-image: linear-gradient(-131deg, #000000, #787878);
+    border-image-slice: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.pop01 div.wrap div.pop_content {
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  section.pop01 div.wrap div.pop_content h2 img {
+    width: 50%;
+  }
+  section.pop01 div.wrap div.pop_content div.form {
+    margin-top: 25px;
+    display: block;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text] {
+    background-color: #eeeeee;
+    color: #000000;
+    width: 100%;
+    height: 67px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: auto 20px;
+    text-align: center;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text]::-webkit-input-placeholder {
+    color: #dbdbdb;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text]::-moz-placeholder {
+    color: #dbdbdb;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text]:-ms-input-placeholder {
+    color: #dbdbdb;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text]::-ms-input-placeholder {
+    color: #dbdbdb;
+  }
+  section.pop01 div.wrap div.pop_content div.form input[type=text]::placeholder {
+    color: #dbdbdb;
+  }
+  section.pop01 div.wrap div.pop_content div.form a {
+    background-color: #1ea7f7;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  section.pop01 div.wrap div.pop_content div.form a span {
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 1.4rem;
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+  }
+  section.pop01 div.wrap div.pop_content p {
+    color: #eeeeee;
+    font-size: 100%;
+    margin: 17px 0;
+    text-align: center;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+  }
+  section.pop01 div.wrap div.pop_content p span {
+    margin: 0 10px;
+  }
+  section.pop01 div.wrap div.pop_content p img {
+    width: 10px;
+  }
+  section.pop01 div.wrap div.pop_content div.img img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  section.pop01 div.wrap a.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999999;
+    background-color: red;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/ic_close_off.png) no-repeat center;
+  }
+  section.pop01 div.wrap a.close:hover {
+    background: url(../img/ic_close_on.png) no-repeat center;
+  }
+  section.pop02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.pop02 div.wrap {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    background: url(../img/pop_bg_problem.png) no-repeat center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    padding-top: 40px;
+  }
+  section.pop02 div.wrap div.pop_content div {
+    display: block;
+  }
+  section.pop02 div.wrap div.pop_content div div.img {
+    margin-right: 0px;
+  }
+  section.pop02 div.wrap div.pop_content div div.img img {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  section.pop02 div.wrap div.pop_content div div {
+    display: block;
+    text-align: center;
+  }
+  section.pop02 div.wrap div.pop_content div div p {
+    padding-top: 30px;
+    display: block;
+    color: #eeeeee;
+    font-size: 100%;
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  section.pop02 div.wrap div.pop_content div div a {
+    background-color: #1ea7f7;
+    color: #eeeeee;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+  section.pop02 div.wrap div.pop_content div div a:hover {
+    -webkit-box-shadow: 10px 10px 10px #222222;
+            box-shadow: 10px 10px 10px #222222;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+  }
+  section.pop02 div.wrap a.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999999;
+    background-color: red;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/ic_close_off.png) no-repeat center;
+  }
+  section.pop02 div.wrap a.close:hover {
+    background: url(../img/ic_close_on.png) no-repeat center;
+  }
   section.pop03 {
     position: absolute;
     top: 0;

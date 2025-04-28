@@ -3408,7 +3408,8 @@ section.pop03 {
               flex: 1 1 auto;
               justify-items: center;
               align-items: center;
-
+              margin: 0;
+              padding: 2px;
               &::before {
                 content: url(../img/item_arrow.png);
                 display: block;

@@ -2377,7 +2377,7 @@ section.pop03 div.wrap a.close:hover {
   section.foot div.container div.d_flex div.right div.img_item div span {
     margin-top: 10px;
     display: block;
-    width: 140px;
+    width: 100%;
     height: 40px;
     background-color: #15548f;
     color: #ffffff;

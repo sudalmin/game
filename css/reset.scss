@@ -2726,6 +2726,7 @@ section.pop03 {
             }
             div.input_all {
               display: flex;
+              align-items: end;
               div.input_wrap {
                 flex-grow: inherit;
                 div {

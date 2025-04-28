@@ -956,6 +956,7 @@ section.foot {
             flex: 1 1 auto;
             justify-items: center;
             align-items: center;
+            margin: 0 41px;
             &::before {
               content: url(../img/item_arrow.png);
               display: block;
@@ -964,7 +965,7 @@ section.foot {
             span {
               margin-top: 10px;
               display: block;
-              width: 140px;
+              width: 100%;
               height: 40px;
               background-color: #15548f;
               color: #ffffff;
@@ -3407,7 +3408,7 @@ section.pop03 {
               flex: 1 1 auto;
               justify-items: center;
               align-items: center;
-              margin: 10px 2px 0px 2px;
+
               &::before {
                 content: url(../img/item_arrow.png);
                 display: block;

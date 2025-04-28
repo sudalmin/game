@@ -1044,6 +1044,7 @@ section.foot div.container div.d_flex div.right div.img_item div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 41px;
 }
 section.foot div.container div.d_flex div.right div.img_item div::before {
   content: url(../img/item_arrow.png);
@@ -1053,7 +1054,7 @@ section.foot div.container div.d_flex div.right div.img_item div::before {
 section.foot div.container div.d_flex div.right div.img_item div span {
   margin-top: 10px;
   display: block;
-  width: 140px;
+  width: 100%;
   height: 40px;
   background-color: #15548f;
   color: #ffffff;
@@ -3766,7 +3767,6 @@ section.pop03 div.wrap a.close:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10px 2px 0px 2px;
   }
   section.foot div.container div.d_flex div.right div.img_item div::before {
     content: url(../img/item_arrow.png);

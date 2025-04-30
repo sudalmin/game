@@ -196,7 +196,7 @@ section {
   justify-content: center;
 }
 .container {
-  width: 1030px;
+  width: 1000px;
 }
 
 .box {
@@ -216,7 +216,7 @@ section.head {
     justify-content: center;
     width: 100%;
     div.top {
-      width: 1030px;
+      width: 1000px;
       display: flex;
       align-items: center;
       div.logo {
@@ -268,7 +268,7 @@ div.section_wrap {
 section.dailygift_wrap {
   div.dailygift {
     display: flex;
-    width: 1028px;
+    width: 1000px;
     height: 360px;
     margin-top: 30px;
     position: relative;
@@ -278,7 +278,7 @@ section.dailygift_wrap {
       position: relative;
       z-index: 3;
       width: 100%;
-      align-items: end;
+      align-items: center;
       padding: 30px;
       div.left {
         width: 100%;
@@ -455,6 +455,55 @@ section.dailygift_wrap {
           }
         }
       }
+      div.right2 {
+        margin-left: auto;
+        a {
+          display: block;
+          margin: auto;
+          position: relative;
+          span.tooltip {
+            display: none;
+          }
+          &:hover {
+            transition: 500ms;
+            position: relative;
+            img {
+              content: url(../img/dailygift_item_on.png);
+            }
+            span.tooltip {
+              display: block;
+              position: absolute;
+              top: -150px;
+              left: -50px;
+              z-index: 2;
+              color: #eeeeee;
+              font-family: "geombangOTR", sans-serif;
+              font-size: 12px;
+              line-height: 1.3;
+              letter-spacing: -0.02rem;
+              font-style: italic;
+              background-color: #3b3b53;
+              background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+              width: 300px;
+              padding: 20px;
+              text-align: left;
+              border-width: 1px;
+              border-style: solid;
+              border-color: #686666 #1f1e1e #000000 #585757;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #3b3b53 transparent transparent transparent;
+              }
+            }
+          }
+        }
+      }
     }
     div.bg {
       position: absolute;
@@ -483,7 +532,7 @@ section.product_wrap {
     border-bottom: #85848c solid 5px;
     margin-top: 38px;
     li {
-      flex: 1 1 auto;
+      width: 25%;
       margin-right: 5px;
       text-align: center;
 
@@ -867,6 +916,7 @@ section.foot {
   div.container {
     div.d_flex {
       div.left {
+        width: 25%;
         h1 {
           margin-top: 40px;
           font-size: 35px;
@@ -874,6 +924,9 @@ section.foot {
           line-height: 1.1;
           color: #eeeeee;
           font-style: italic;
+          img {
+            width: 100%;
+          }
           span {
             font-size: 59px;
             color: #de00ff;
@@ -907,8 +960,8 @@ section.foot {
         }
       }
       div.right {
-        margin-left: 40px;
-        width: 100%;
+        padding-left: 40px;
+        width: 75%;
         div.progressbar {
           ol {
             display: flex;
@@ -1148,14 +1201,17 @@ section.pop02 {
   div.wrap {
     position: relative;
     width: 840px;
-    height: 360px;
+    height: auto;
     background: url(../img/pop_bg_problem.png) no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: end;
+    padding-top: 20px;
     div.pop_content {
       div {
         display: flex;
+        align-items: end;
         div.img {
           margin-right: 50px;
           img {
@@ -1178,6 +1234,7 @@ section.pop02 {
             margin-bottom: 40px;
           }
           a {
+            margin-bottom: 30px;
             background-color: #1ea7f7;
             color: #eeeeee;
             font-size: 1.5rem;
@@ -1235,6 +1292,13 @@ section.pop03 {
     div.pop_content {
       margin-top: 30px;
       width: 756px;
+      div.img_t {
+        font-size: 60px;
+        color: #eeeeee;
+        font-family: "geombangOTB", sans-serif;
+        font-style: italic;
+        line-height: 1.1;
+      }
       div.box_item.package {
         margin-top: 20px;
       }
@@ -1248,8 +1312,10 @@ section.pop03 {
           line-height: 1.5;
           text-align: left;
           width: 440px;
-          height: auto;
+          height: 250px;
           padding: 15px 20px;
+          overflow-y: auto;
+          overflow-x: hidden;
         }
         div.box2 {
           display: block;
@@ -1439,7 +1505,7 @@ section.pop03 {
         position: relative;
         z-index: 3;
         margin: 30px;
-        align-items: end;
+        align-items: center;
         div.left {
           width: 100%;
           padding: 0px;
@@ -1570,6 +1636,58 @@ section.pop03 {
           }
         }
         div.right {
+          margin: 0;
+          a {
+            display: block;
+            margin: 0px;
+            text-align: center;
+            span.tooltip {
+              display: none;
+            }
+            img {
+              width: 100%;
+            }
+            &:hover {
+              transition: 500ms;
+              position: relative;
+              img {
+                content: url(../img/dailygift_item_on.png);
+              }
+              span.tooltip {
+                display: block;
+                position: absolute;
+                top: -150px;
+                left: 40%;
+                z-index: 2;
+                color: #eeeeee;
+                font-family: "geombangOTR", sans-serif;
+                font-size: 12px;
+                line-height: 1.3;
+                letter-spacing: -0.02rem;
+                font-style: italic;
+                background-color: #3b3b53;
+                background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+                width: 300px;
+                padding: 20px;
+                text-align: left;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #686666 #1f1e1e #000000 #585757;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: #3b3b53 transparent transparent transparent;
+                }
+              }
+            }
+          }
+        }
+        div.right2 {
           margin: 0;
           a {
             display: block;
@@ -2372,7 +2490,7 @@ section.pop03 {
           div {
             display: block;
             p {
-              padding-top: 30px;
+              padding-top: 0px;
               display: block;
               color: #eeeeee;
               font-size: 1.7rem;
@@ -2446,6 +2564,12 @@ section.pop03 {
         height: auto;
         padding: 0 30px;
         div.img_t {
+          font-size: 2rem;
+          color: #eeeeee;
+          font-family: "geombangOTB", sans-serif;
+          font-style: italic;
+          line-height: 1.1;
+          padding-top: 20px;
           img {
             width: 80%;
             margin-top: 50px;
@@ -2465,8 +2589,10 @@ section.pop03 {
             line-height: 1.5;
             text-align: left;
             width: 100%;
-            height: auto;
+            height: 263px;
             padding: 15px 20px;
+            overflow-y: auto;
+            overflow-x: hidden;
           }
           div.box2 {
             display: block;
@@ -2816,6 +2942,56 @@ section.pop03 {
         }
         div.right {
           display: none;
+          margin: 0;
+          a {
+            display: block;
+            margin: 20px;
+            text-align: center;
+            span.tooltip {
+              display: none;
+            }
+            &:hover {
+              transition: 500ms;
+              position: relative;
+              img {
+                content: url(../img/dailygift_item_on.png);
+              }
+              span.tooltip {
+                display: block;
+                position: absolute;
+                top: -150px;
+                left: 0px;
+                z-index: 2;
+                color: #eeeeee;
+                font-family: "geombangOTR", sans-serif;
+                font-size: 12px;
+                line-height: 1.3;
+                letter-spacing: -0.02rem;
+                font-style: italic;
+                background-color: #3b3b53;
+                background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+                width: 100%;
+                padding: 20px;
+                text-align: left;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #686666 #1f1e1e #000000 #585757;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: #3b3b53 transparent transparent transparent;
+                }
+              }
+            }
+          }
+        }
+        div.right2 {
+          display: block;
           margin: 0;
           a {
             display: block;
@@ -3765,6 +3941,12 @@ section.pop03 {
         height: auto;
         padding: 0 30px;
         div.img_t {
+          font-size: 140%;
+          color: #eeeeee;
+          font-family: "geombangOTB", sans-serif;
+          font-style: italic;
+          line-height: 1.1;
+          padding-top: 20px;
           img {
             width: 80%;
             margin-top: 30px;
@@ -3784,8 +3966,10 @@ section.pop03 {
             line-height: 1.5;
             text-align: left;
             width: 100%;
-            height: auto;
+            max-height: 150px;
             padding: 15px 20px;
+            overflow-y: auto;
+            overflow-x: hidden;
           }
           div.box2 {
             display: block;

@@ -212,7 +212,7 @@ section {
 }
 
 .container {
-  width: 1030px;
+  width: 1000px;
 }
 
 .box {
@@ -238,7 +238,7 @@ section.head div.top_wrap {
   width: 100%;
 }
 section.head div.top_wrap div.top {
-  width: 1030px;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ section.dailygift_wrap div.dailygift {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1028px;
+  width: 1000px;
   height: 360px;
   margin-top: 30px;
   position: relative;
@@ -318,9 +318,9 @@ section.dailygift_wrap div.dailygift div.c_wrap {
   position: relative;
   z-index: 3;
   width: 100%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px;
 }
 section.dailygift_wrap div.dailygift div.c_wrap div.left {
@@ -503,6 +503,56 @@ section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::
   border-style: solid;
   border-color: #3b3b53 transparent transparent transparent;
 }
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 {
+  margin-left: auto;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a {
+  display: block;
+  margin: auto;
+  position: relative;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a span.tooltip {
+  display: none;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  position: relative;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover img {
+  content: url(../img/dailygift_item_on.png);
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip {
+  display: block;
+  position: absolute;
+  top: -150px;
+  left: -50px;
+  z-index: 2;
+  color: #eeeeee;
+  font-family: "geombangOTR", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: -0.02rem;
+  font-style: italic;
+  background-color: #3b3b53;
+  background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #686666 #1f1e1e #000000 #585757;
+}
+section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #3b3b53 transparent transparent transparent;
+}
 section.dailygift_wrap div.dailygift div.bg {
   position: absolute;
   top: 0;
@@ -527,9 +577,7 @@ section.product_wrap ul.tap_menu {
   margin-top: 38px;
 }
 section.product_wrap ul.tap_menu li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  width: 25%;
   margin-right: 5px;
   text-align: center;
 }
@@ -940,6 +988,9 @@ section.foot {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 100px 0;
 }
+section.foot div.container div.d_flex div.left {
+  width: 25%;
+}
 section.foot div.container div.d_flex div.left h1 {
   margin-top: 40px;
   font-size: 35px;
@@ -947,6 +998,9 @@ section.foot div.container div.d_flex div.left h1 {
   line-height: 1.1;
   color: #eeeeee;
   font-style: italic;
+}
+section.foot div.container div.d_flex div.left h1 img {
+  width: 100%;
 }
 section.foot div.container div.d_flex div.left h1 span {
   font-size: 59px;
@@ -983,8 +1037,8 @@ section.foot div.container div.d_flex div.left p {
   color: rgba(255, 255, 255, 0.7);
 }
 section.foot div.container div.d_flex div.right {
-  margin-left: 40px;
-  width: 100%;
+  padding-left: 40px;
+  width: 75%;
 }
 section.foot div.container div.d_flex div.right div.progressbar ol {
   display: -webkit-box;
@@ -1268,8 +1322,9 @@ section.pop02 {
 section.pop02 div.wrap {
   position: relative;
   width: 840px;
-  height: 360px;
+  height: auto;
   background: url(../img/pop_bg_problem.png) no-repeat center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1279,11 +1334,15 @@ section.pop02 div.wrap {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  padding-top: 20px;
 }
 section.pop02 div.wrap div.pop_content div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 section.pop02 div.wrap div.pop_content div div.img {
   margin-right: 50px;
@@ -1314,6 +1373,7 @@ section.pop02 div.wrap div.pop_content div div p {
   margin-bottom: 40px;
 }
 section.pop02 div.wrap div.pop_content div div a {
+  margin-bottom: 30px;
   background-color: #1ea7f7;
   color: #eeeeee;
   font-size: 1.5rem;
@@ -1388,6 +1448,13 @@ section.pop03 div.wrap div.pop_content {
   margin-top: 30px;
   width: 756px;
 }
+section.pop03 div.wrap div.pop_content div.img_t {
+  font-size: 60px;
+  color: #eeeeee;
+  font-family: "geombangOTB", sans-serif;
+  font-style: italic;
+  line-height: 1.1;
+}
 section.pop03 div.wrap div.pop_content div.box_item.package {
   margin-top: 20px;
 }
@@ -1404,8 +1471,10 @@ section.pop03 div.wrap div.pop_content div.box_item div.box_txt {
   line-height: 1.5;
   text-align: left;
   width: 440px;
-  height: auto;
+  height: 250px;
   padding: 15px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 section.pop03 div.wrap div.pop_content div.box_item div.box2 {
   display: block;
@@ -1616,9 +1685,9 @@ section.pop03 div.wrap a.close:hover {
     position: relative;
     z-index: 3;
     margin: 30px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left {
     width: 100%;
@@ -1797,6 +1866,59 @@ section.pop03 div.wrap a.close:hover {
     border-color: #686666 #1f1e1e #000000 #585757;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 {
+    margin: 0;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a {
+    display: block;
+    margin: 0px;
+    text-align: center;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a span.tooltip {
+    display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a img {
+    width: 100%;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover img {
+    content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 40%;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -2639,7 +2761,7 @@ section.pop03 div.wrap a.close:hover {
     display: block;
   }
   section.pop02 div.wrap div.pop_content div div p {
-    padding-top: 30px;
+    padding-top: 0px;
     display: block;
     color: #eeeeee;
     font-size: 1.7rem;
@@ -2728,6 +2850,14 @@ section.pop03 div.wrap a.close:hover {
     height: auto;
     padding: 0 30px;
   }
+  section.pop03 div.wrap div.pop_content div.img_t {
+    font-size: 2rem;
+    color: #eeeeee;
+    font-family: "geombangOTB", sans-serif;
+    font-style: italic;
+    line-height: 1.1;
+    padding-top: 20px;
+  }
   section.pop03 div.wrap div.pop_content div.img_t img {
     width: 80%;
     margin-top: 50px;
@@ -2751,8 +2881,10 @@ section.pop03 div.wrap a.close:hover {
     line-height: 1.5;
     text-align: left;
     width: 100%;
-    height: auto;
+    height: 263px;
     padding: 15px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 {
     display: block;
@@ -3170,6 +3302,57 @@ section.pop03 div.wrap a.close:hover {
     border-color: #686666 #1f1e1e #000000 #585757;
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.right a:hover span.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3b3b53 transparent transparent transparent;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 {
+    display: block;
+    margin: 0;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a {
+    display: block;
+    margin: 20px;
+    text-align: center;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a span.tooltip {
+    display: none;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    position: relative;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover img {
+    content: url(../img/dailygift_item_on.png);
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    z-index: 2;
+    color: #eeeeee;
+    font-family: "geombangOTR", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-style: italic;
+    background-color: #3b3b53;
+    background-color: linear-gradient(to top, #4d5f8a, #3b3b53);
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686666 #1f1e1e #000000 #585757;
+  }
+  section.dailygift_wrap div.dailygift div.c_wrap div.right2 a:hover span.tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -4175,6 +4358,14 @@ section.pop03 div.wrap a.close:hover {
     height: auto;
     padding: 0 30px;
   }
+  section.pop03 div.wrap div.pop_content div.img_t {
+    font-size: 140%;
+    color: #eeeeee;
+    font-family: "geombangOTB", sans-serif;
+    font-style: italic;
+    line-height: 1.1;
+    padding-top: 20px;
+  }
   section.pop03 div.wrap div.pop_content div.img_t img {
     width: 80%;
     margin-top: 30px;
@@ -4196,8 +4387,10 @@ section.pop03 div.wrap a.close:hover {
     line-height: 1.5;
     text-align: left;
     width: 100%;
-    height: auto;
+    max-height: 150px;
     padding: 15px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   section.pop03 div.wrap div.pop_content div.box_item div.box2 {
     display: block;

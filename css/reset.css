@@ -1157,6 +1157,10 @@ section.foot div.container ul.btns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
+}
+section.foot div.container ul.btns li {
+  padding: 0;
 }
 section.foot div.container ul.btns li::before {
   display: inline-block;
@@ -2381,6 +2385,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.foot div.container div.d_flex div.left {
     text-align: center;
+    width: 100%;
   }
   section.foot div.container div.d_flex div.left h1 {
     margin-top: 40px;
@@ -2390,6 +2395,9 @@ section.pop03 div.wrap a.close:hover {
     line-height: 1.1;
     color: #eeeeee;
     font-style: italic;
+  }
+  section.foot div.container div.d_flex div.left h1 img {
+    width: 50%;
   }
   section.foot div.container div.d_flex div.left h1 span {
     font-size: 59px;
@@ -2552,6 +2560,7 @@ section.pop03 div.wrap a.close:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 20px;
   }
   section.foot div.container ul.btns li::before {
     display: inline-block;
@@ -4022,6 +4031,7 @@ section.pop03 div.wrap a.close:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 10px;
   }
   section.foot div.container ul.btns li::before {
     display: inline-block;

@@ -3837,6 +3837,7 @@ section.pop03 div.wrap a.close:hover {
   }
   section.foot div.container div.d_flex div.left {
     text-align: center;
+    width: 100%;
   }
   section.foot div.container div.d_flex div.left h1 {
     margin-top: 0px;
@@ -3848,7 +3849,7 @@ section.pop03 div.wrap a.close:hover {
     font-style: italic;
   }
   section.foot div.container div.d_flex div.left h1 img {
-    width: 80%;
+    width: 70%;
   }
   section.foot div.container div.d_flex div.left h1 span {
     font-size: 59px;

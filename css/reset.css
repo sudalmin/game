@@ -1678,7 +1678,7 @@ section.pop03 div.wrap a.close:hover {
     display: flex;
     width: 100%;
     height: 100%;
-    margin: 30px;
+    margin: 30px 20px;
     position: relative;
   }
   section.dailygift_wrap div.dailygift div.c_wrap {
@@ -1688,7 +1688,7 @@ section.pop03 div.wrap a.close:hover {
     width: 100%;
     position: relative;
     z-index: 3;
-    margin: 30px;
+    margin: 0px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1770,9 +1770,10 @@ section.pop03 div.wrap a.close:hover {
   }
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div input[type=text] {
     width: 100%;
+    font-size: 0.5rem;
     font-weight: bold;
     color: #d792fd;
-    padding: 5px 15px;
+    padding: 7px 15px;
     background-color: #000000;
     border: rgba(255, 255, 255, 0.2) solid 1px;
   }
@@ -3207,9 +3208,9 @@ section.pop03 div.wrap a.close:hover {
   section.dailygift_wrap div.dailygift div.c_wrap div.left div.box_info div.input_all div.input_wrap div input[type=text] {
     width: 100%;
     font-weight: bold;
-    font-size: 80%;
+    font-size: 0.55rem;
     color: #d792fd;
-    padding: 5px 15px;
+    padding: 8px 10px;
     background-color: #000000;
     border: rgba(255, 255, 255, 0.2) solid 1px;
   }

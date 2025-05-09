@@ -632,7 +632,7 @@ section.product_wrap div.product_list div.pro div.wrap h3 {
   height: 105px;
   padding-left: 15px;
   padding-top: 0px;
-  font-size: 2rem;
+  font-size: 190%;
   line-height: 1.2;
   font-weight: bolder;
   font-style: italic;
@@ -1349,7 +1349,7 @@ section.pop02 div.wrap div.pop_content div {
           align-items: end;
 }
 section.pop02 div.wrap div.pop_content div div.img {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 section.pop02 div.wrap div.pop_content div div.img img {
   display: -webkit-box;
@@ -2018,7 +2018,7 @@ section.pop03 div.wrap a.close:hover {
     height: 105px;
     padding-left: 15px;
     padding-top: 0px;
-    font-size: 2rem;
+    font-size: 180%;
     line-height: 1.2;
     font-weight: bolder;
     font-style: italic;
@@ -2209,10 +2209,10 @@ section.pop03 div.wrap a.close:hover {
     grid-template-columns: auto auto;
     gap: 15px 15px;
     margin-top: 35px;
-    padding: 40px;
+    padding: 20px;
   }
   section.product_wrap div.product_list_gold div.pro {
-    width: 336px;
+    width: 100%;
     position: relative;
   }
   section.product_wrap div.product_list_gold div.pro:hover {
@@ -4257,14 +4257,18 @@ section.pop03 div.wrap a.close:hover {
             align-items: end;
     padding-top: 40px;
   }
+  section.pop02 div.wrap div.pop_content {
+    padding: 20px;
+  }
   section.pop02 div.wrap div.pop_content div {
     display: block;
+    justify-items: center;
   }
   section.pop02 div.wrap div.pop_content div div.img {
     margin-right: 0px;
   }
   section.pop02 div.wrap div.pop_content div div.img img {
-    width: 50%;
+    width: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
